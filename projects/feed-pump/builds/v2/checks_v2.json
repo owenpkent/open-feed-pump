@@ -1,0 +1,1519 @@
+{
+  "format": "nl-cad/checks/1",
+  "summary": {
+    "pass": 51,
+    "warn": 2,
+    "fail": 9,
+    "accepted": 0,
+    "untriaged": 2,
+    "stale_accepts": [],
+    "coverage": [
+      {
+        "check": "interference",
+        "ran": 101,
+        "of": 101,
+        "unit": "pairs with overlapping bboxes"
+      },
+      {
+        "check": "envelope.width",
+        "ran": null,
+        "of": null,
+        "unit": ""
+      },
+      {
+        "check": "envelope.length",
+        "ran": null,
+        "of": null,
+        "unit": ""
+      },
+      {
+        "check": "envelope.height",
+        "ran": null,
+        "of": null,
+        "unit": ""
+      },
+      {
+        "check": "envelope.height_excl",
+        "ran": null,
+        "of": null,
+        "unit": ""
+      },
+      {
+        "check": "door",
+        "ran": null,
+        "of": null,
+        "unit": ""
+      },
+      {
+        "check": "ground.contact",
+        "ran": null,
+        "of": null,
+        "unit": ""
+      },
+      {
+        "check": "ground.clearance",
+        "ran": null,
+        "of": null,
+        "unit": ""
+      },
+      {
+        "check": "mass.total",
+        "ran": 45,
+        "of": 45,
+        "unit": "instances"
+      },
+      {
+        "check": "mass.cg",
+        "ran": 45,
+        "of": 45,
+        "unit": "instances"
+      },
+      {
+        "check": "qa.joints",
+        "ran": null,
+        "of": null,
+        "unit": ""
+      },
+      {
+        "check": "qa.connected",
+        "ran": null,
+        "of": null,
+        "unit": ""
+      },
+      {
+        "check": "qa.joint_contact",
+        "ran": 44,
+        "of": 44,
+        "unit": "joints"
+      },
+      {
+        "check": "qa.mass_density",
+        "ran": 29,
+        "of": 45,
+        "unit": "instances"
+      },
+      {
+        "check": "qa.mass_missing",
+        "ran": 45,
+        "of": 45,
+        "unit": "instances"
+      },
+      {
+        "check": "qa.bom",
+        "ran": 28,
+        "of": 45,
+        "unit": "instances (bought only)"
+      },
+      {
+        "check": "qa.mesh",
+        "ran": 45,
+        "of": 45,
+        "unit": "instances"
+      },
+      {
+        "check": "qa.insert.front/case_front",
+        "ran": 0,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.front/hinge_pin",
+        "ran": 1,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.front/bearing_f",
+        "ran": 2,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.front/bearing_r",
+        "ran": 3,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.electronics/pcb",
+        "ran": 4,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.electronics/display",
+        "ran": 5,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.electronics/usb",
+        "ran": 6,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.electronics/jack",
+        "ran": 7,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.electronics/sounder",
+        "ran": 8,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.electronics/p_up",
+        "ran": 9,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.electronics/p_down",
+        "ran": 10,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.electronics/air",
+        "ran": 11,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.electronics/sw_cass",
+        "ran": 12,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.electronics/sw_door",
+        "ran": 13,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.electronics/btn_1",
+        "ran": 14,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.electronics/btn_2",
+        "ran": 15,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.electronics/btn_3",
+        "ran": 16,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.electronics/btn_4",
+        "ran": 17,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.electronics/btn_5",
+        "ran": 18,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.rotor_grp/rotor",
+        "ran": 19,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.rotor_grp/worm_wheel",
+        "ran": 20,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.rotor_grp/magnet",
+        "ran": 21,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.rotor_grp/roller_1",
+        "ran": 22,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.rotor_grp/roller_2",
+        "ran": 23,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.rotor_grp/roller_3",
+        "ran": 24,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.back/case_back",
+        "ran": 25,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.back/motor",
+        "ran": 26,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.back/worm",
+        "ran": 27,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.back/encoder",
+        "ran": 28,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.back/cell_1",
+        "ran": 29,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.back/cell_2",
+        "ran": 30,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.back/insert_1",
+        "ran": 31,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.back/insert_2",
+        "ran": 32,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.back/insert_3",
+        "ran": 33,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.back/insert_4",
+        "ran": 34,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.cassette/cassette",
+        "ran": 35,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.cassette/tube",
+        "ran": 36,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.cassette/lever",
+        "ran": 37,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.cassette/spring",
+        "ran": 38,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.door/door",
+        "ran": 39,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.insert.door/latch",
+        "ran": 40,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      },
+      {
+        "check": "qa.fastener.head_buried",
+        "ran": 4,
+        "of": 4,
+        "unit": "fasteners"
+      },
+      {
+        "check": "qa.fastener.engagement",
+        "ran": 4,
+        "of": 4,
+        "unit": "fasteners"
+      },
+      {
+        "check": "qa.fastener.bought_clash",
+        "ran": 4,
+        "of": 4,
+        "unit": "fasteners"
+      },
+      {
+        "check": "qa.fastener.head_overlap",
+        "ran": 4,
+        "of": 4,
+        "unit": "fasteners"
+      },
+      {
+        "check": "qa.fastener.stock",
+        "ran": 4,
+        "of": 4,
+        "unit": "fasteners"
+      },
+      {
+        "check": "qa.fastener.access",
+        "ran": 4,
+        "of": 4,
+        "unit": "fasteners"
+      },
+      {
+        "check": "qa.fastener.bom",
+        "ran": 4,
+        "of": 4,
+        "unit": "fasteners"
+      }
+    ],
+    "not_checked": [
+      {
+        "check": "qa.mass_density",
+        "reason": "material has no density bound in qa/static.py DENSITY",
+        "items": [
+          "back/case_back",
+          "back/cell_1",
+          "back/cell_2",
+          "back/encoder",
+          "cassette/cassette",
+          "cassette/lever",
+          "cassette/tube",
+          "door/door",
+          "door/latch",
+          "electronics/btn_1",
+          "electronics/btn_2",
+          "electronics/btn_3",
+          "electronics/btn_4",
+          "electronics/btn_5",
+          "electronics/pcb",
+          "front/case_front"
+        ]
+      }
+    ]
+  },
+  "checks": [
+    {
+      "id": "interference",
+      "name": "Part overlap",
+      "status": "fail",
+      "value": 0.1791,
+      "limit": 0.0,
+      "unit": "cm3",
+      "detail": "4 overlapping pairs: rotor_grp/roller_1 x cassette/tube 0.1 cm3; rotor_grp/roller_2 x cassette/tube 0.0 cm3; rotor_grp/roller_3 x cassette/tube 0.0 cm3; cassette/cassette x cassette/lever 0.0 cm3",
+      "parts": [
+        "cassette/cassette",
+        "cassette/lever",
+        "cassette/tube",
+        "rotor_grp/roller_1",
+        "rotor_grp/roller_2",
+        "rotor_grp/roller_3"
+      ],
+      "scope": {
+        "ran": 101,
+        "of": 101,
+        "unit": "pairs with overlapping bboxes"
+      }
+    },
+    {
+      "id": "envelope.width",
+      "name": "Overall width",
+      "status": "pass",
+      "value": 0.16,
+      "limit": 0.16,
+      "unit": "m",
+      "detail": "160 mm",
+      "parts": [
+        "front/case_front"
+      ]
+    },
+    {
+      "id": "envelope.length",
+      "name": "Overall length",
+      "status": "pass",
+      "value": 0.058,
+      "limit": 0.058,
+      "unit": "m",
+      "detail": "58 mm",
+      "parts": [
+        "back/case_back",
+        "door/door"
+      ]
+    },
+    {
+      "id": "envelope.height",
+      "name": "Overall height",
+      "status": "info",
+      "value": 0.125,
+      "limit": null,
+      "unit": "m",
+      "detail": "125 mm",
+      "parts": [
+        "cassette/tube",
+        "front/case_front"
+      ]
+    },
+    {
+      "id": "envelope.height_excl",
+      "name": "Overall height without */tube",
+      "status": "pass",
+      "value": 0.11,
+      "limit": 0.11,
+      "unit": "m",
+      "detail": "110 mm",
+      "parts": [
+        "front/case_front"
+      ]
+    },
+    {
+      "id": "door",
+      "name": "Doorway fit",
+      "status": "pass",
+      "value": 0.16,
+      "limit": 0.813,
+      "unit": "m",
+      "detail": "+653 mm total clearance in an 813 mm door",
+      "parts": []
+    },
+    {
+      "id": "ground.contact",
+      "name": "Wheel ground contact",
+      "status": "pass",
+      "value": 0.0,
+      "limit": 0.002,
+      "unit": "m",
+      "detail": "0 wheels; lowest points ",
+      "parts": []
+    },
+    {
+      "id": "ground.clearance",
+      "name": "Ground clearance",
+      "status": "info",
+      "value": -0.015,
+      "limit": null,
+      "unit": "m",
+      "detail": "lowest non-wheel point -15 mm (cassette/tube)",
+      "parts": [
+        "cassette/tube"
+      ]
+    },
+    {
+      "id": "mass.total",
+      "name": "Total mass",
+      "status": "warn",
+      "value": 0.606,
+      "limit": 0.6,
+      "unit": "kg",
+      "detail": "0.6 kg over 45 instances",
+      "parts": [
+        "back/case_back",
+        "back/cell_1",
+        "back/cell_2",
+        "back/motor",
+        "front/case_front"
+      ],
+      "scope": {
+        "ran": 45,
+        "of": 45,
+        "unit": "instances"
+      }
+    },
+    {
+      "id": "mass.cg",
+      "name": "Centre of gravity height",
+      "status": "info",
+      "value": 0.0491,
+      "limit": null,
+      "unit": "m",
+      "detail": "x +28, y +6, z 49 mm (x forward of the drive-axle datum)",
+      "parts": [],
+      "scope": {
+        "ran": 45,
+        "of": 45,
+        "unit": "instances"
+      }
+    },
+    {
+      "id": "qa.joints",
+      "name": "Joint definitions",
+      "status": "pass",
+      "value": 0.0,
+      "limit": 0.0,
+      "unit": "issues",
+      "detail": "44 joints: axes, ranges, parents and origins are consistent",
+      "parts": []
+    },
+    {
+      "id": "qa.connected",
+      "name": "Parts form one connected body",
+      "status": "pass",
+      "value": 1.0,
+      "limit": 1.0,
+      "unit": "clusters",
+      "detail": "45 parts, each within 2 mm of another",
+      "parts": []
+    },
+    {
+      "id": "qa.joint_contact",
+      "name": "Joint parts touch",
+      "status": "pass",
+      "value": 0.0005,
+      "limit": 0.005,
+      "unit": "m",
+      "detail": "all 44 joints have parent and child surfaces within 5 mm",
+      "parts": [],
+      "scope": {
+        "ran": 44,
+        "of": 44,
+        "unit": "joints"
+      }
+    },
+    {
+      "id": "qa.mass_density",
+      "name": "Mass is physically possible",
+      "status": "fail",
+      "value": 9.0,
+      "limit": 0.0,
+      "unit": "parts",
+      "detail": "mass exceeds a solid of the stated material: electronics/air 3361 kg/m3 vs 1500 max for its material; electronics/display 2480 kg/m3 vs 1500 max for its material; electronics/jack 6061 kg/m3 vs 1500 max for its material; electronics/p_down 4687 kg/m3 vs 1500 max for its material; electronics/p_up 4687 kg/m3 vs 1500 max for its material; electronics/sounder 1862 kg/m3 vs 1500 max for its material. Either the mass or the material is wrong, or the shape is too small.",
+      "parts": [
+        "electronics/air",
+        "electronics/display",
+        "electronics/jack",
+        "electronics/p_down",
+        "electronics/p_up",
+        "electronics/sounder",
+        "electronics/sw_cass",
+        "electronics/sw_door",
+        "electronics/usb"
+      ],
+      "skipped": [
+        {
+          "reason": "material has no density bound in qa/static.py DENSITY",
+          "items": [
+            "back/case_back",
+            "back/cell_1",
+            "back/cell_2",
+            "back/encoder",
+            "cassette/cassette",
+            "cassette/lever",
+            "cassette/tube",
+            "door/door",
+            "door/latch",
+            "electronics/btn_1",
+            "electronics/btn_2",
+            "electronics/btn_3",
+            "electronics/btn_4",
+            "electronics/btn_5",
+            "electronics/pcb",
+            "front/case_front"
+          ]
+        }
+      ],
+      "scope": {
+        "ran": 29,
+        "of": 45,
+        "unit": "instances"
+      }
+    },
+    {
+      "id": "qa.mass_missing",
+      "name": "Every part has a mass",
+      "status": "pass",
+      "value": 0.0,
+      "limit": 0.0,
+      "unit": "parts",
+      "detail": "45 instances carry a positive mass",
+      "parts": [],
+      "scope": {
+        "ran": 45,
+        "of": 45,
+        "unit": "instances"
+      }
+    },
+    {
+      "id": "qa.bom",
+      "name": "Bought parts name a vendor or part number",
+      "status": "pass",
+      "value": 0.0,
+      "limit": 0.0,
+      "unit": "parts",
+      "detail": "28 bought instances all named. Status tiers over 45 instances: confirmed 0, measured 0, published 4, estimated 41",
+      "parts": [],
+      "scope": {
+        "ran": 28,
+        "of": 45,
+        "unit": "instances (bought only)"
+      }
+    },
+    {
+      "id": "qa.mesh",
+      "name": "Part meshes are solid",
+      "status": "pass",
+      "value": 0.0,
+      "limit": 0.0,
+      "unit": "parts",
+      "detail": "45 meshes closed with positive volume",
+      "parts": [],
+      "scope": {
+        "ran": 45,
+        "of": 45,
+        "unit": "instances"
+      }
+    },
+    {
+      "id": "qa.insert.front/case_front",
+      "name": "Insertion, front/case_front",
+      "status": "pass",
+      "value": 0.0,
+      "limit": null,
+      "unit": "m",
+      "detail": "first part of its step 'Case front': nothing present to get past",
+      "parts": [
+        "front/case_front"
+      ],
+      "scope": {
+        "ran": 0,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.front/hinge_pin",
+      "name": "Insertion, front/hinge_pin",
+      "status": "pass",
+      "value": 0.1,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +z (100 mm to leave the 1 parts present at step 'Case front')",
+      "parts": [
+        "front/hinge_pin"
+      ],
+      "scope": {
+        "ran": 1,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.front/bearing_f",
+      "name": "Insertion, front/bearing_f",
+      "status": "pass",
+      "value": 0.018,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +x (18 mm to leave the 2 parts present at step 'Case front'); blocked: +z by front/case_front at 2 mm, -z by front/case_front at 2 mm",
+      "parts": [
+        "front/bearing_f"
+      ],
+      "scope": {
+        "ran": 2,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.front/bearing_r",
+      "name": "Insertion, front/bearing_r",
+      "status": "pass",
+      "value": 0.006,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along -x (6 mm to leave the 3 parts present at step 'Case front'); blocked: +z by front/case_front at 2 mm, -z by front/case_front at 2 mm, +x by front/bearing_f at 6 mm",
+      "parts": [
+        "front/bearing_r"
+      ],
+      "scope": {
+        "ran": 3,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.electronics/pcb",
+      "name": "Insertion, electronics/pcb",
+      "status": "warn",
+      "value": 0.0288,
+      "limit": null,
+      "unit": "m",
+      "detail": "off-axis way in: clear only along (-1,+1,+0) (29 mm); every stated direction is blocked: +z by front/case_front at 3 mm; -z by front/case_front at 4 mm; +x by front/case_front at 2 mm; -x by front/case_front at 3 mm; +y by front/case_front at 21 mm; -y by front/case_front at 3 mm",
+      "parts": [
+        "electronics/pcb",
+        "front/case_front"
+      ],
+      "scope": {
+        "ran": 4,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.electronics/display",
+      "name": "Insertion, electronics/display",
+      "status": "fail",
+      "value": 0.0,
+      "limit": null,
+      "unit": "m",
+      "detail": "no way in at step 'Electronics': all 6 stated and axis directions and all 20 diagonals are blocked; +z by front/case_front at 4 mm; -z by front/case_front at 12 mm; +x by front/case_front at 2 mm; -x by electronics/pcb at 3 mm; +y by front/case_front at 18 mm; -y by front/case_front at 3 mm. Nearest blocker overall front/case_front along +x; reorder the steps, add an insert: direction, or open a path",
+      "parts": [
+        "electronics/display",
+        "electronics/pcb",
+        "front/case_front"
+      ],
+      "scope": {
+        "ran": 5,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.electronics/usb",
+      "name": "Insertion, electronics/usb",
+      "status": "pass",
+      "value": 0.0073,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along -z (7 mm to leave the 6 parts present at step 'Electronics'); blocked: +z by electronics/display at 56 mm",
+      "parts": [
+        "electronics/usb"
+      ],
+      "scope": {
+        "ran": 6,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.electronics/jack",
+      "name": "Insertion, electronics/jack",
+      "status": "pass",
+      "value": 0.011,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along -z (11 mm to leave the 7 parts present at step 'Electronics'); blocked: +z by front/case_front at 4 mm",
+      "parts": [
+        "electronics/jack"
+      ],
+      "scope": {
+        "ran": 7,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.electronics/sounder",
+      "name": "Insertion, electronics/sounder",
+      "status": "pass",
+      "value": 0.0265,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along -x (26 mm to leave the 8 parts present at step 'Electronics'); blocked: +z by front/case_front at 3 mm, -z by front/case_front at 93 mm, +x by front/case_front at 2 mm",
+      "parts": [
+        "electronics/sounder"
+      ],
+      "scope": {
+        "ran": 8,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.electronics/p_up",
+      "name": "Insertion, electronics/p_up",
+      "status": "pass",
+      "value": 0.0202,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +x (20 mm to leave the 9 parts present at step 'Electronics'); blocked: +z by front/case_front at 2 mm, -z by front/case_front at 2 mm",
+      "parts": [
+        "electronics/p_up"
+      ],
+      "scope": {
+        "ran": 9,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.electronics/p_down",
+      "name": "Insertion, electronics/p_down",
+      "status": "pass",
+      "value": 0.0202,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +x (20 mm to leave the 10 parts present at step 'Electronics'); blocked: +z by front/case_front at 2 mm, -z by front/case_front at 2 mm",
+      "parts": [
+        "electronics/p_down"
+      ],
+      "scope": {
+        "ran": 10,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.electronics/air",
+      "name": "Insertion, electronics/air",
+      "status": "pass",
+      "value": 0.0152,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +x (15 mm to leave the 11 parts present at step 'Electronics'); blocked: +z by front/case_front at 2 mm, -z by front/case_front at 2 mm",
+      "parts": [
+        "electronics/air"
+      ],
+      "scope": {
+        "ran": 11,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.electronics/sw_cass",
+      "name": "Insertion, electronics/sw_cass",
+      "status": "pass",
+      "value": 0.02,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +x (20 mm to leave the 12 parts present at step 'Electronics'); blocked: +z by front/case_front at 2 mm, -z by front/case_front at 2 mm",
+      "parts": [
+        "electronics/sw_cass"
+      ],
+      "scope": {
+        "ran": 12,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.electronics/sw_door",
+      "name": "Insertion, electronics/sw_door",
+      "status": "pass",
+      "value": 0.006,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +x (6 mm to leave the 13 parts present at step 'Electronics'); blocked: +z by front/case_front at 2 mm, -z by front/case_front at 2 mm",
+      "parts": [
+        "electronics/sw_door"
+      ],
+      "scope": {
+        "ran": 13,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.electronics/btn_1",
+      "name": "Insertion, electronics/btn_1",
+      "status": "pass",
+      "value": 0.0075,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +x (7 mm to leave the 14 parts present at step 'Electronics'); blocked: +z by front/case_front at 4 mm, -z by front/case_front at 4 mm",
+      "parts": [
+        "electronics/btn_1"
+      ],
+      "scope": {
+        "ran": 14,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.electronics/btn_2",
+      "name": "Insertion, electronics/btn_2",
+      "status": "pass",
+      "value": 0.0075,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +x (7 mm to leave the 15 parts present at step 'Electronics'); blocked: +z by front/case_front at 4 mm, -z by front/case_front at 4 mm",
+      "parts": [
+        "electronics/btn_2"
+      ],
+      "scope": {
+        "ran": 15,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.electronics/btn_3",
+      "name": "Insertion, electronics/btn_3",
+      "status": "pass",
+      "value": 0.0075,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +x (7 mm to leave the 16 parts present at step 'Electronics'); blocked: +z by front/case_front at 4 mm, -z by front/case_front at 4 mm",
+      "parts": [
+        "electronics/btn_3"
+      ],
+      "scope": {
+        "ran": 16,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.electronics/btn_4",
+      "name": "Insertion, electronics/btn_4",
+      "status": "pass",
+      "value": 0.0075,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +x (7 mm to leave the 17 parts present at step 'Electronics'); blocked: +z by front/case_front at 4 mm, -z by electronics/usb at 3 mm",
+      "parts": [
+        "electronics/btn_4"
+      ],
+      "scope": {
+        "ran": 17,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.electronics/btn_5",
+      "name": "Insertion, electronics/btn_5",
+      "status": "pass",
+      "value": 0.0075,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +x (7 mm to leave the 18 parts present at step 'Electronics'); blocked: +z by front/case_front at 4 mm, -z by front/case_front at 4 mm",
+      "parts": [
+        "electronics/btn_5"
+      ],
+      "scope": {
+        "ran": 18,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.rotor_grp/rotor",
+      "name": "Insertion, rotor_grp/rotor",
+      "status": "pass",
+      "value": 0.04,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +x (40 mm to leave the 19 parts present at step 'Rotor and rollers'); blocked: +z by front/case_front at 3 mm, -z by front/case_front at 3 mm",
+      "parts": [
+        "rotor_grp/rotor"
+      ],
+      "scope": {
+        "ran": 19,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.rotor_grp/worm_wheel",
+      "name": "Insertion, rotor_grp/worm_wheel",
+      "status": "pass",
+      "value": 0.0075,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along -x (8 mm to leave the 20 parts present at step 'Rotor and rollers'); blocked: +z by rotor_grp/rotor at 3 mm, -z by rotor_grp/rotor at 3 mm, +x by front/case_front at 6 mm",
+      "parts": [
+        "rotor_grp/worm_wheel"
+      ],
+      "scope": {
+        "ran": 20,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.rotor_grp/magnet",
+      "name": "Insertion, rotor_grp/magnet",
+      "status": "pass",
+      "value": 0.018,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +z (18 mm to leave the 21 parts present at step 'Rotor and rollers')",
+      "parts": [
+        "rotor_grp/magnet"
+      ],
+      "scope": {
+        "ran": 21,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.rotor_grp/roller_1",
+      "name": "Insertion, rotor_grp/roller_1",
+      "status": "pass",
+      "value": 0.011,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +x (11 mm to leave the 22 parts present at step 'Rotor and rollers'); blocked: +z by front/case_front at 14 mm, -z by front/case_front at 66 mm",
+      "parts": [
+        "rotor_grp/roller_1"
+      ],
+      "scope": {
+        "ran": 22,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.rotor_grp/roller_2",
+      "name": "Insertion, rotor_grp/roller_2",
+      "status": "pass",
+      "value": 0.011,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +x (11 mm to leave the 23 parts present at step 'Rotor and rollers'); blocked: +z by front/case_front at 33 mm, -z by electronics/p_up at 10 mm",
+      "parts": [
+        "rotor_grp/roller_2"
+      ],
+      "scope": {
+        "ran": 23,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.rotor_grp/roller_3",
+      "name": "Insertion, rotor_grp/roller_3",
+      "status": "pass",
+      "value": 0.011,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +x (11 mm to leave the 24 parts present at step 'Rotor and rollers'); blocked: +z by front/case_front at 33 mm, -z by electronics/air at 6 mm",
+      "parts": [
+        "rotor_grp/roller_3"
+      ],
+      "scope": {
+        "ran": 24,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.back/case_back",
+      "name": "Insertion, back/case_back",
+      "status": "pass",
+      "value": 0.0135,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along -x (14 mm to leave the 25 parts present at step 'Case back and drive'); blocked: +z by rotor_grp/worm_wheel at 57 mm, -z by rotor_grp/worm_wheel at 34 mm, +x by front/case_front at 2 mm",
+      "parts": [
+        "back/case_back"
+      ],
+      "scope": {
+        "ran": 25,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.back/motor",
+      "name": "Insertion, back/motor",
+      "status": "fail",
+      "value": 0.0,
+      "limit": null,
+      "unit": "m",
+      "detail": "no way in at step 'Case back and drive': all 6 stated and axis directions and all 20 diagonals are blocked; +z by rotor_grp/worm_wheel at 2 mm; -z by front/case_front at 39 mm; +x by electronics/p_up at 2 mm; -x by back/case_back at 2 mm; +y by front/case_front at 3 mm; -y by front/case_front at 78 mm. Nearest blocker overall rotor_grp/worm_wheel along +z; reorder the steps, add an insert: direction, or open a path",
+      "parts": [
+        "back/case_back",
+        "back/motor",
+        "electronics/p_up",
+        "front/case_front",
+        "rotor_grp/worm_wheel"
+      ],
+      "scope": {
+        "ran": 26,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.back/worm",
+      "name": "Insertion, back/worm",
+      "status": "fail",
+      "value": 0.0,
+      "limit": null,
+      "unit": "m",
+      "detail": "no way in at step 'Case back and drive': all 6 stated and axis directions and all 20 diagonals are blocked; +z by back/motor at 2 mm; -z by back/motor at 2 mm; +x by back/motor at 2 mm; -x by back/motor at 2 mm; +y by back/case_back at 30 mm; -y by back/motor at 8 mm. Nearest blocker overall back/motor along +z; reorder the steps, add an insert: direction, or open a path",
+      "parts": [
+        "back/case_back",
+        "back/motor",
+        "back/worm"
+      ],
+      "scope": {
+        "ran": 27,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.back/encoder",
+      "name": "Insertion, back/encoder",
+      "status": "pass",
+      "value": 0.048,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +z (48 mm to leave the 28 parts present at step 'Case back and drive')",
+      "parts": [
+        "back/encoder"
+      ],
+      "scope": {
+        "ran": 28,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.back/cell_1",
+      "name": "Insertion, back/cell_1",
+      "status": "fail",
+      "value": 0.0,
+      "limit": null,
+      "unit": "m",
+      "detail": "no way in at step 'Case back and drive': all 6 stated and axis directions and all 20 diagonals are blocked; +z by back/case_back at 18 mm; -z by back/case_back at 2 mm; +x by front/case_front at 15 mm; -x by back/case_back at 2 mm; +y by back/case_back at 68 mm; -y by back/case_back at 3 mm. Nearest blocker overall back/case_back along -z; reorder the steps, add an insert: direction, or open a path",
+      "parts": [
+        "back/case_back",
+        "back/cell_1",
+        "front/case_front"
+      ],
+      "scope": {
+        "ran": 29,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.back/cell_2",
+      "name": "Insertion, back/cell_2",
+      "status": "fail",
+      "value": 0.0,
+      "limit": null,
+      "unit": "m",
+      "detail": "no way in at step 'Case back and drive': all 6 stated and axis directions and all 20 diagonals are blocked; +z by back/case_back at 18 mm; -z by back/case_back at 2 mm; +x by front/case_front at 15 mm; -x by back/case_back at 2 mm; +y by back/case_back at 3 mm; -y by back/cell_1 at 2 mm. Nearest blocker overall back/case_back along -z; reorder the steps, add an insert: direction, or open a path",
+      "parts": [
+        "back/case_back",
+        "back/cell_1",
+        "back/cell_2",
+        "front/case_front"
+      ],
+      "scope": {
+        "ran": 30,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.back/insert_1",
+      "name": "Insertion, back/insert_1",
+      "status": "pass",
+      "value": 0.0065,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along -x (6 mm to leave the 31 parts present at step 'Case back and drive'); blocked: +z by back/case_back at 2 mm, -z by back/case_back at 2 mm, +x by electronics/pcb at 39 mm",
+      "parts": [
+        "back/insert_1"
+      ],
+      "scope": {
+        "ran": 31,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.back/insert_2",
+      "name": "Insertion, back/insert_2",
+      "status": "pass",
+      "value": 0.0065,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along -x (6 mm to leave the 32 parts present at step 'Case back and drive'); blocked: +z by back/case_back at 2 mm, -z by back/case_back at 2 mm, +x by electronics/pcb at 39 mm",
+      "parts": [
+        "back/insert_2"
+      ],
+      "scope": {
+        "ran": 32,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.back/insert_3",
+      "name": "Insertion, back/insert_3",
+      "status": "pass",
+      "value": 0.0065,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along -x (6 mm to leave the 33 parts present at step 'Case back and drive'); blocked: +z by back/case_back at 2 mm, -z by back/case_back at 2 mm, +x by front/case_front at 32 mm",
+      "parts": [
+        "back/insert_3"
+      ],
+      "scope": {
+        "ran": 33,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.back/insert_4",
+      "name": "Insertion, back/insert_4",
+      "status": "pass",
+      "value": 0.0065,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along -x (6 mm to leave the 34 parts present at step 'Case back and drive'); blocked: +z by back/case_back at 2 mm, -z by back/case_back at 2 mm, +x by front/case_front at 32 mm",
+      "parts": [
+        "back/insert_4"
+      ],
+      "scope": {
+        "ran": 34,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.cassette/cassette",
+      "name": "Insertion, cassette/cassette",
+      "status": "fail",
+      "value": 0.0,
+      "limit": null,
+      "unit": "m",
+      "detail": "no way in at step 'Cassette and tube': all 6 stated and axis directions and all 20 diagonals are blocked; +z by electronics/p_up at 2 mm; -z by front/case_front at 2 mm; +x by front/hinge_pin at 10 mm; -x by front/case_front at 2 mm; +y by front/case_front at 2 mm; -y by front/case_front at 2 mm. Nearest blocker overall electronics/p_up along +z; reorder the steps, add an insert: direction, or open a path",
+      "parts": [
+        "cassette/cassette",
+        "electronics/p_up",
+        "front/case_front",
+        "front/hinge_pin"
+      ],
+      "scope": {
+        "ran": 35,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.cassette/tube",
+      "name": "Insertion, cassette/tube",
+      "status": "fail",
+      "value": 0.0,
+      "limit": null,
+      "unit": "m",
+      "detail": "no way in at step 'Cassette and tube': all 6 stated and axis directions and all 20 diagonals are blocked; +z by cassette/cassette at 2 mm; -z by rotor_grp/roller_1 at 3 mm; +x by front/case_front at 2 mm; -x by front/case_front at 2 mm; +y by front/case_front at 2 mm; -y by front/case_front at 2 mm. Nearest blocker overall cassette/cassette along +z; reorder the steps, add an insert: direction, or open a path",
+      "parts": [
+        "cassette/cassette",
+        "cassette/tube",
+        "front/case_front",
+        "rotor_grp/roller_1"
+      ],
+      "scope": {
+        "ran": 36,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.cassette/lever",
+      "name": "Insertion, cassette/lever",
+      "status": "pass",
+      "value": 0.011,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +x (11 mm to leave the 37 parts present at step 'Cassette and tube'); blocked: +z by electronics/p_down at 2 mm, -z by front/case_front at 2 mm",
+      "parts": [
+        "cassette/lever"
+      ],
+      "scope": {
+        "ran": 37,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.cassette/spring",
+      "name": "Insertion, cassette/spring",
+      "status": "pass",
+      "value": 0.0035,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +x (4 mm to leave the 38 parts present at step 'Cassette and tube'); blocked: +z by cassette/cassette at 2 mm, -z by front/case_front at 2 mm",
+      "parts": [
+        "cassette/spring"
+      ],
+      "scope": {
+        "ran": 38,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.door/door",
+      "name": "Insertion, door/door",
+      "status": "pass",
+      "value": 0.0035,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +x (4 mm to leave the 39 parts present at step 'Door and latch'); blocked: +z by cassette/lever at 3 mm, -z by cassette/spring at 9 mm",
+      "parts": [
+        "door/door"
+      ],
+      "scope": {
+        "ran": 39,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.insert.door/latch",
+      "name": "Insertion, door/latch",
+      "status": "pass",
+      "value": 0.0055,
+      "limit": null,
+      "unit": "m",
+      "detail": "clear along +x (5 mm to leave the 40 parts present at step 'Door and latch'); blocked: +z by door/door at 6 mm, -z by door/door at 3 mm",
+      "parts": [
+        "door/latch"
+      ],
+      "scope": {
+        "ran": 40,
+        "of": 44,
+        "unit": "other parts (those present at its step)"
+      }
+    },
+    {
+      "id": "qa.fastener.head_buried",
+      "name": "Fastener heads not buried",
+      "status": "pass",
+      "value": 0.0,
+      "limit": 0.0,
+      "unit": "fasteners",
+      "detail": "no point 0.25 mm behind a bearing face lies in another solid of the body (4 screws)",
+      "parts": [],
+      "scope": {
+        "ran": 4,
+        "of": 4,
+        "unit": "fasteners"
+      }
+    },
+    {
+      "id": "qa.fastener.engagement",
+      "name": "Fastener engagement",
+      "status": "pass",
+      "value": 0.0,
+      "limit": 0.0,
+      "unit": "fasteners",
+      "detail": "all 4 screws engage their host or reach through their nut",
+      "parts": [],
+      "scope": {
+        "ran": 4,
+        "of": 4,
+        "unit": "fasteners"
+      }
+    },
+    {
+      "id": "qa.fastener.bought_clash",
+      "name": "Fasteners clear of bought parts",
+      "status": "pass",
+      "value": 0.0,
+      "limit": 0.0,
+      "unit": "fasteners",
+      "detail": "no shank or nut sits inside a bought part it does not thread into",
+      "parts": [],
+      "scope": {
+        "ran": 4,
+        "of": 4,
+        "unit": "fasteners"
+      }
+    },
+    {
+      "id": "qa.fastener.head_overlap",
+      "name": "Fastener heads and nuts clear of solids",
+      "status": "pass",
+      "value": 0.0,
+      "limit": 0.0,
+      "unit": "fasteners",
+      "detail": "no head or nut overlaps a solid of its body",
+      "parts": [],
+      "scope": {
+        "ran": 4,
+        "of": 4,
+        "unit": "fasteners"
+      }
+    },
+    {
+      "id": "qa.fastener.stock",
+      "name": "Fastener stock lengths",
+      "status": "pass",
+      "value": 0.0,
+      "limit": 0.0,
+      "unit": "fasteners",
+      "detail": "all 4 lengths are stocked",
+      "parts": [],
+      "scope": {
+        "ran": 4,
+        "of": 4,
+        "unit": "fasteners"
+      }
+    },
+    {
+      "id": "qa.fastener.access",
+      "name": "Fastener driver access",
+      "status": "pass",
+      "value": 0.0,
+      "limit": 0.0,
+      "unit": "fasteners",
+      "detail": "every driven head has a free key path and hand space (4 screws)",
+      "parts": [],
+      "scope": {
+        "ran": 4,
+        "of": 4,
+        "unit": "fasteners"
+      }
+    },
+    {
+      "id": "qa.fastener.bom",
+      "name": "Fastener BOM rows",
+      "status": "pass",
+      "value": 0.0,
+      "limit": 0.0,
+      "unit": "fasteners",
+      "detail": "all 4 BOM rows match their screw",
+      "parts": [],
+      "scope": {
+        "ran": 4,
+        "of": 4,
+        "unit": "fasteners"
+      }
+    }
+  ]
+}

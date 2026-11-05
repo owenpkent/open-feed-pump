@@ -1,0 +1,31 @@
+part,qty,bought,vendor,part_number,description,mass_kg,provenance,source
+air_sensor,1,True,generic,optical air sensor 14 x 10 x 12,"Optical air-in-line sensor, U slot straddling the tube",0.004,estimated,Brief v1 envelope; mass estimated
+bearing,2,True,generic,MR115 (5 x 11 x 4),Deep groove ball bearing,0.001,estimated,Brief v1: MR115 or similar
+button,5,False,,,Silicone keypad button,0.001,estimated,estimated: Brief v1
+case_back,1,False,,,"Case, rear half, printed PETG, 2.5 mm walls",0.1,estimated,estimated: Brief v1
+case_front,1,False,,,"Case, front half with bay, bulkhead, printed PETG",0.11,estimated,estimated: Brief v1
+cassette,1,False,,,"Cassette plate, printable or moulded, single use",0.019,estimated,estimated: Brief v1
+cell,2,True,generic,18650 cell,"Protected 18650 cell, 2S pack of two",0.047,estimated,Brief v1 envelope; mass estimated
+display,1,True,generic,display 60 x 42 x 4,Display,0.025,estimated,Brief v1 envelope; mass estimated
+door,1,False,,,"Door, clear polycarbonate 3 mm, with pinch pin",0.027,estimated,estimated: Brief v1
+encoder,1,True,generic,AS5600 board,AS5600 encoder board stand-in,0.001,estimated,estimated: Brief v1
+hinge_stub_bot,1,True,generic,"3 mm steel pin, 6 long","Door hinge pin stub, bottom, 3 mm steel",0.0,estimated,Brief v1 (3 mm steel pin); length estimated
+hinge_stub_top,1,True,generic,"3 mm steel pin, 8 long","Door hinge pin stub, top, 3 mm steel",0.0,estimated,Brief v1 (3 mm steel pin); length estimated
+insert,4,True,generic,M4 heat-set insert,M4 brass insert for the AMPS pattern,0.001,estimated,estimated: Brief v1
+jack,1,True,generic,3.5 mm switch socket,"3.5 mm assistive switch socket, opening down",0.002,estimated,estimated: Brief v1
+latch,1,False,,,"Door latch slider, printed",0.001,estimated,estimated: Brief v1
+lever,1,False,,,"Pinch lever, printed",0.001,estimated,estimated: Brief v1
+magnet,1,True,generic,diametric magnet 6 x 2.5,Diametric magnet for the encoder,0.001,estimated,estimated: Brief v1
+motor,1,True,generic,NEMA11 28x28x32,"NEMA 11 stepper, 5 mm shaft",0.11,estimated,estimated: Brief v1
+p_sensor,2,True,generic,pressure sensor 8 x 8 x 10,"Pressure sensor, tip on the tube through a window",0.003,estimated,Brief v1 envelope; mass estimated
+pcb,1,True,generic,main board,Main PCB stand-in,0.036,estimated,estimated: Brief v1
+roller,3,False,generic,stand-in,"Roller, 8 OD x 8 wide, acetal",0.001,estimated,estimated: Brief v1
+rotor,1,False,,,Rotor shaft with hub and three roller pins,0.019,estimated,estimated: Brief v1
+screw_m3x30,4,True,ISO 4762 (any fastener supplier),ISO 4762 M3x30,"M3x0.5 hex socket head cap screw, steel, stock lengths 5 to 60 mm. Mass is for the 25 mm length.",0.002,published,"library/fasteners/screw-iso4762-m3.json: ISO 4762:2004 Table 1 (head diameter dk max 'knurled', head height k, socket s, preferred lengths in the commercial range); geometry from bd_warehouse 0.4.0 (Apache-2.0), simple solids without thread"
+sounder,1,True,generic,12 mm sounder,Piezo sounder behind a grille,0.002,estimated,estimated: Brief v1
+spring,1,True,generic,torsion spring,Torsion spring closing the pinch lever (stand-in),0.0,estimated,estimated: Brief v1
+switch,2,True,generic,switch 6 x 6 x 6,Door switch or cassette-present sensor,0.001,estimated,Brief v1 envelope; mass estimated
+tube,1,True,generic,silicone tube 3.2 x 6.4,"Silicone tube, 3.2 ID x 6.4 OD (medical grade needed)",0.006,estimated,estimated: Brief v1
+usb,1,True,generic,USB-C receptacle,"USB-C receptacle, opening down",0.002,estimated,estimated: typical receptacle
+worm,1,False,generic,stand-in,"Worm, module 0.5, plain cylinder at pitch diameter",0.002,estimated,estimated: Brief v1
+worm_wheel,1,False,generic,stand-in,"Worm wheel, module 0.5, 30 teeth, plain cylinder at pitch diameter",0.007,estimated,estimated: Brief v1

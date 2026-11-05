@@ -1,0 +1,57 @@
+[
+  {
+    "version": 1,
+    "date": "2026-11-05",
+    "note": "first build"
+  },
+  {
+    "version": 2,
+    "date": "2026-11-05",
+    "note": "v2: counterbores, shifted drive back 2 mm, hollow bay tray"
+  },
+  {
+    "version": 3,
+    "date": "2026-11-05",
+    "note": "v3"
+  },
+  {
+    "version": 4,
+    "date": "2026-11-05",
+    "note": "v4"
+  },
+  {
+    "version": 5,
+    "date": "2026-11-05",
+    "note": "v5"
+  },
+  {
+    "version": 6,
+    "date": "2026-11-05",
+    "note": "v6"
+  },
+  {
+    "version": 7,
+    "date": "2026-11-05",
+    "note": "v7: accepted sweep warns, renders"
+  },
+  {
+    "version": 8,
+    "date": "2026-11-05",
+    "note": "v8: pinch lever reworked, closed gap 2.05, open gap 1.2, range 24 degrees"
+  },
+  {
+    "version": 9,
+    "date": "2026-11-05",
+    "note": "v9: OK Studio subassembly colors, no geometry change"
+  },
+  {
+    "version": 10,
+    "date": "2026-11-05",
+    "note": "v10: lever x tube declared contact (pinch closes on the tube)"
+  },
+  {
+    "version": 11,
+    "date": "2026-11-05",
+    "note": "v11: lever hub radius 3.3 so it clears the case floor by 1.2"
+  }
+]

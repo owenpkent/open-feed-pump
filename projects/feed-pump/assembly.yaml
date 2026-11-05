@@ -1,0 +1,251 @@
+# feed-pump: portable rotary peristaltic enteral feeding pump, first CAD build. Millimetres. Z up, X forward, Y left.
+# Layout, joints and numbers: "Brief v1.md". Every number is estimated unless the Brief cites a source. Bought parts are stand-ins at their real envelope.
+project: feed-pump
+units: mm
+
+# Shared sizes, written once and passed to both the stand-in and the pocket that holds it (YAML anchors).
+sizes:
+  pressure: &pressure [10, 8, 8]       # X (tip toward the tube), Y, Z. Brief: 8 x 8 x 10
+  air: &air [12, 14, 10]               # X, Y, Z. Brief: 14 x 10 x 12, straddling the tube
+  switch: &switch [6, 6, 6]            # door switch and cassette-present sensor
+
+# Colors: OK Studio palette (okstudio-style).
+subassemblies:
+  - {id: front,       name: Case front,           color: "#2c3b50"}
+  - {id: electronics, name: Electronics,          color: "#2fae74"}
+  - {id: rotor_grp,   name: Rotor and rollers,    color: "#ff6f85"}
+  - {id: back,        name: Case back and drive,  color: "#233245"}
+  - {id: cassette,    name: Cassette and tube,    color: "#8fe8f2"}
+  - {id: door,        name: Door and latch,       color: "#5b9cff"}
+  - {id: hardware,    name: Hardware,             color: "#7f93a8"}
+
+world_frames:
+  case_origin: {origin: [0, 0, 0], z: [0, 0, 1]}
+  rotor_axis: {origin: [41.5, 42, 66], z: [1, 0, 0], x: [0, 1, 0]}     # Brief: axis along X at Y=42, Z=66; X=41.5 is the hub back face
+  door_hinge: {origin: [55, 77.5, 56], z: [0, 0, 1]}                   # Brief: axis along Z at about Y=78, X=58; moved to X=55 so the door stays inside 58 deep
+
+parts:
+  - {id: case_back,  module: case_back}
+  - {id: case_front, module: case_front, params: {p_size: *pressure, air_size: *air, sw_size: *switch}}
+  - {id: cassette,   module: cassette}
+  - {id: tube,       module: tube}
+  - {id: rotor,      module: rotor}
+  - {id: lever,      module: pinch_lever}
+  - {id: door,       module: door}
+  - {id: latch,      module: latch}
+  - {id: motor,      module: motor}
+  - {id: pcb,        module: main_board}
+  - {id: button,     module: button}
+  - id: bearing
+    module: standin_cyl
+    params: {d: 11, l: 4, bore: 5, mass_kg: 0.0012, material: steel, part_number: "MR115 (5 x 11 x 4)", description: "Deep groove ball bearing", source: "Brief v1: MR115 or similar"}
+  - id: roller
+    module: standin_cyl
+    params: {d: 8, l: 8, bore: 3.2, mass_kg: 0.0005, material: plastic, bought: false, description: "Roller, 8 OD x 8 wide, acetal", source: "estimated: Brief v1"}
+  - id: worm_wheel
+    module: standin_cyl
+    params: {d: 15, l: 5, bore: 5, mass_kg: 0.0067, material: brass, bought: false, description: "Worm wheel, module 0.5, 30 teeth, plain cylinder at pitch diameter", source: "estimated: Brief v1"}
+  - id: worm
+    module: standin_cyl
+    params: {d: 8, l: 10, bore: 5, mass_kg: 0.0023, material: steel, bought: false, description: "Worm, module 0.5, plain cylinder at pitch diameter", source: "estimated: Brief v1"}
+  - id: magnet
+    module: standin_cyl
+    params: {d: 6, l: 2.5, mass_kg: 0.0005, material: steel, part_number: "diametric magnet 6 x 2.5", description: "Diametric magnet for the encoder", source: "estimated: Brief v1"}
+  - id: insert
+    module: standin_cyl
+    params: {d: 5.6, l: 6, bore: 4, mass_kg: 0.0006, material: brass, part_number: "M4 heat-set insert", description: "M4 brass insert for the AMPS pattern", source: "estimated: Brief v1"}
+  - id: cell
+    module: standin_cyl
+    params: {d: 18.5, l: 65, mass_kg: 0.047, material: li-ion, part_number: "18650 cell", description: "Protected 18650 cell, 2S pack of two", source: "Brief v1 envelope; mass estimated"}
+  - id: sounder
+    module: standin_cyl
+    params: {d: 12, l: 9.5, mass_kg: 0.002, material: electronics, part_number: "12 mm sounder", description: "Piezo sounder behind a grille", source: "estimated: Brief v1"}
+  - id: hinge_stub_top
+    module: standin_cyl
+    params: {d: 3, l: 8, mass_kg: 0.0004, material: steel, part_number: "3 mm steel pin, 8 long", description: "Door hinge pin stub, top, 3 mm steel", source: "Brief v1 (3 mm steel pin); length estimated"}
+  - id: hinge_stub_bot
+    module: standin_cyl
+    params: {d: 3, l: 6, mass_kg: 0.0003, material: steel, part_number: "3 mm steel pin, 6 long", description: "Door hinge pin stub, bottom, 3 mm steel", source: "Brief v1 (3 mm steel pin); length estimated"}
+  - id: spring
+    module: standin_cyl
+    params: {d: 7, l: 2.5, bore: 3.2, mass_kg: 0.0003, material: steel, part_number: "torsion spring", description: "Torsion spring closing the pinch lever (stand-in)", source: "estimated: Brief v1"}
+  - id: encoder
+    module: standin_box
+    params: {size: [8, 8, 1.6], mass_kg: 0.001, material: fr4, part_number: "AS5600 board", description: "AS5600 encoder board stand-in", source: "estimated: Brief v1"}
+  - id: display
+    module: standin_box
+    params: {size: [4, 60, 42], mass_kg: 0.025, material: electronics, part_number: "display 60 x 42 x 4", description: "Display", source: "Brief v1 envelope; mass estimated"}
+  - id: usb
+    module: standin_box
+    params: {size: [3.3, 9, 7.3], mass_kg: 0.002, material: electronics, part_number: "USB-C receptacle", description: "USB-C receptacle, opening down", source: "estimated: typical receptacle"}
+  - id: jack
+    module: standin_box
+    params: {size: [5, 6, 11], mass_kg: 0.002, material: electronics, part_number: "3.5 mm switch socket", description: "3.5 mm assistive switch socket, opening down", source: "estimated: Brief v1"}
+  - id: p_sensor
+    module: standin_box
+    params: {size: *pressure, mass_kg: 0.003, material: electronics, part_number: "pressure sensor 8 x 8 x 10", description: "Pressure sensor, tip on the tube through a window", source: "Brief v1 envelope; mass estimated"}
+  - id: air_sensor
+    module: standin_box
+    params: {size: *air, notch: [7, 7.0], mass_kg: 0.004, material: electronics, part_number: "optical air sensor 14 x 10 x 12", description: "Optical air-in-line sensor, U slot straddling the tube", source: "Brief v1 envelope; mass estimated"}
+  - id: switch
+    module: standin_box
+    params: {size: *switch, mass_kg: 0.001, material: electronics, part_number: "switch 6 x 6 x 6", description: "Door switch or cassette-present sensor", source: "Brief v1 envelope; mass estimated"}
+
+instances:
+  - {id: case_front,   part: case_front, subassembly: front, place: {self: origin, to: world.case_origin, type: coincident}}
+  - {id: hinge_top,    part: hinge_stub_top, subassembly: front, place: {self: c, to: case_front.hinge_top, type: coincident}}
+  - {id: hinge_bot,    part: hinge_stub_bot, subassembly: front, place: {self: c, to: case_front.hinge_bot, type: coincident}}
+  - {id: bearing_f,    part: bearing, subassembly: front, place: {self: c, to: case_front.bearing_front, type: coincident}}
+  - {id: bearing_r,    part: bearing, subassembly: front, place: {self: c, to: case_front.bearing_rear, type: coincident}}
+  - {id: display,      part: display, subassembly: electronics, place: {self: c, to: case_front.display, type: coincident}}
+  - {id: pcb,          part: pcb, subassembly: electronics, place: {self: c, to: case_front.pcb, type: coincident}}
+  - {id: usb,          part: usb, subassembly: electronics, place: {self: c, to: case_front.usb, type: coincident}}
+  - {id: jack,         part: jack, subassembly: electronics, place: {self: c, to: case_front.jack, type: coincident}}
+  - {id: sounder,      part: sounder, subassembly: electronics, place: {self: c, to: case_front.sounder, type: coincident}}
+  - {id: p_up,         part: p_sensor, subassembly: electronics, place: {self: c, to: case_front.pressure_up, type: coincident}}
+  - {id: p_down,       part: p_sensor, subassembly: electronics, place: {self: c, to: case_front.pressure_down, type: coincident}}
+  - {id: air,          part: air_sensor, subassembly: electronics, place: {self: c, to: case_front.air, type: coincident}}
+  - {id: sw_cass,      part: switch, subassembly: electronics, place: {self: c, to: case_front.sw_cass, type: coincident}}
+  - {id: sw_door,      part: switch, subassembly: electronics, place: {self: c, to: case_front.sw_door, type: coincident}}
+  - foreach: [{k: 1}, {k: 2}, {k: 3}, {k: 4}, {k: 5}]
+    id: btn_{k}
+    part: button
+    subassembly: electronics
+    place: {self: seat, to: "case_front.btn_{k}", type: coincident}
+  - {id: rotor,        part: rotor, subassembly: rotor_grp, place: {self: axis, to: world.rotor_axis, type: coincident}}
+  - {id: worm_wheel,   part: worm_wheel, subassembly: rotor_grp, place: {self: c, to: rotor.wheel_seat, type: coincident}}
+  - {id: magnet,       part: magnet, subassembly: rotor_grp, place: {self: c, to: rotor.magnet_seat, type: coincident}}
+  - foreach: [{k: 1}, {k: 2}, {k: 3}]
+    id: roller_{k}
+    part: roller
+    subassembly: rotor_grp
+    place: {self: c, to: "rotor.pin_{k}", type: coincident}
+  - {id: case_back,    part: case_back, subassembly: back, place: {self: origin, to: world.case_origin, type: coincident}}
+  - {id: motor,        part: motor, subassembly: back, place: {self: face, to: case_back.motor_seat, type: coincident}}
+  - {id: worm,         part: worm, subassembly: back, place: {self: c, to: motor.worm_seat, type: coincident}}
+  - {id: encoder,      part: encoder, subassembly: back, place: {self: c, to: case_back.encoder, type: coincident}}
+  - {id: cell_1,       part: cell, subassembly: back, place: {self: c, to: case_back.cell_1, type: coincident}}
+  - {id: cell_2,       part: cell, subassembly: back, place: {self: c, to: case_back.cell_2, type: coincident}}
+  - foreach: [{k: 1}, {k: 2}, {k: 3}, {k: 4}]
+    id: insert_{k}
+    part: insert
+    subassembly: back
+    place: {self: c, to: "case_back.amps_{k}", type: coincident}
+  - {id: cassette,     part: cassette, subassembly: cassette, place: {self: foot, to: case_front.cassette_seat, type: coincident}}
+  - {id: tube,         part: tube, subassembly: cassette, place: {self: top, to: cassette.tube_top, type: coincident}}
+  - {id: lever,        part: lever, subassembly: cassette, place: {self: pivot, to: cassette.lever_pivot, type: coincident}}
+  - {id: spring,       part: spring, subassembly: cassette, place: {self: c, to: cassette.spring_seat, type: coincident}}
+  - {id: door,         part: door, subassembly: door, place: {self: hinge, to: world.door_hinge, type: coincident}}
+  - {id: latch,        part: latch, subassembly: door, place: {self: slide, to: door.latch, type: coincident}}
+
+# Joints. Moving ones first (Brief "Joints first" table); the rest are fixed. case_back is the root.
+joints:
+  - {name: rotor, type: continuous, parent: case_front, child: rotor, frame: world.rotor_axis}
+  - foreach: [{k: 1}, {k: 2}, {k: 3}]
+    name: roller_{k}
+    type: continuous
+    parent: rotor
+    child: roller_{k}
+    frame: "rotor.pin_{k}"
+  - {name: door, type: revolute, parent: case_front, child: door, frame: world.door_hinge, range: [0, 1.745]}
+  - {name: pinch, type: revolute, parent: cassette, child: lever, frame: cassette.lever_pivot, range: [-0.4189, 0]}
+  - {name: latch, type: prismatic, parent: door, child: latch, frame: door.latch, range: [0, 0.006]}
+  - {name: fx_case_front, type: fixed, parent: case_back, child: case_front, frame: case_front.split}
+  - {name: fx_hinge_top, type: fixed, parent: case_front, child: hinge_top, frame: case_front.hinge_top}
+  - {name: fx_hinge_bot, type: fixed, parent: case_front, child: hinge_bot, frame: case_front.hinge_bot}
+  - {name: fx_bearing_f, type: fixed, parent: case_front, child: bearing_f, frame: case_front.bearing_front}
+  - {name: fx_bearing_r, type: fixed, parent: case_front, child: bearing_r, frame: case_front.bearing_rear}
+  - {name: fx_pcb, type: fixed, parent: case_front, child: pcb, frame: case_front.pcb}
+  - {name: fx_display, type: fixed, parent: case_front, child: display, frame: case_front.display}
+  - {name: fx_usb, type: fixed, parent: pcb, child: usb, frame: case_front.usb}
+  - {name: fx_jack, type: fixed, parent: pcb, child: jack, frame: case_front.jack}
+  - {name: fx_sounder, type: fixed, parent: case_front, child: sounder, frame: case_front.sounder}
+  - {name: fx_p_up, type: fixed, parent: case_front, child: p_up, frame: case_front.pressure_up}
+  - {name: fx_p_down, type: fixed, parent: case_front, child: p_down, frame: case_front.pressure_down}
+  - {name: fx_air, type: fixed, parent: case_front, child: air, frame: case_front.air}
+  - {name: fx_sw_cass, type: fixed, parent: case_front, child: sw_cass, frame: case_front.sw_cass}
+  - {name: fx_sw_door, type: fixed, parent: case_front, child: sw_door, frame: case_front.sw_door}
+  - foreach: [{k: 1}, {k: 2}, {k: 3}, {k: 4}, {k: 5}]
+    name: fx_btn_{k}
+    type: fixed
+    parent: case_front
+    child: btn_{k}
+    frame: "case_front.btn_{k}"
+  - {name: fx_worm_wheel, type: fixed, parent: rotor, child: worm_wheel, frame: rotor.wheel_seat}
+  - {name: fx_magnet, type: fixed, parent: rotor, child: magnet, frame: rotor.magnet_seat}
+  - {name: fx_motor, type: fixed, parent: case_back, child: motor, frame: case_back.motor_seat}
+  - {name: fx_worm, type: fixed, parent: motor, child: worm, frame: motor.worm_seat}
+  - {name: fx_encoder, type: fixed, parent: case_back, child: encoder, frame: case_back.encoder}
+  - {name: fx_cell_1, type: fixed, parent: case_back, child: cell_1, frame: case_back.cell_1}
+  - {name: fx_cell_2, type: fixed, parent: case_back, child: cell_2, frame: case_back.cell_2}
+  - foreach: [{k: 1}, {k: 2}, {k: 3}, {k: 4}]
+    name: fx_insert_{k}
+    type: fixed
+    parent: case_back
+    child: insert_{k}
+    frame: "case_back.amps_{k}"
+  - {name: fx_cassette, type: fixed, parent: case_front, child: cassette, frame: case_front.cassette_seat}
+  - {name: fx_tube, type: fixed, parent: cassette, child: tube, frame: cassette.tube_top}
+  - {name: fx_spring, type: fixed, parent: cassette, child: spring, frame: cassette.spring_seat}
+
+# Four M3 screws from the back, through the rear half's corner bosses into the front half's bosses.
+fasteners:
+  - foreach: [{k: 1}, {k: 2}, {k: 3}, {k: 4}]
+    id: scr_{k}
+    between: [case_back, case_front]
+    at: "case_back@scr_{k}"
+    size: M3
+    subassembly: hardware
+
+steps:
+  - {name: Case front, subassemblies: [front]}
+  - {name: Electronics, subassemblies: [electronics]}
+  - {name: Rotor and rollers, subassemblies: [rotor_grp]}
+  - {name: Case back and drive, subassemblies: [back], order: [motor, worm, encoder, cell_1, cell_2, insert_1, insert_2, insert_3, insert_4, case_back]}
+  - {name: Cassette and tube, subassemblies: [cassette]}
+  - {name: Door and latch, subassemblies: [door]}
+  - {name: Hardware, subassemblies: [hardware]}
+
+checks:
+  interference:
+    min_volume_cm3: 0.02            # strict on purpose: the default 0.5 cm3 is a tenth of this pump's smallest assemblies
+    allow:
+      # Rollers against the uncompressed tube: expected. The tube is drawn round at its free size (6.4 OD) and the rollers squeeze it
+      # to the 2.7 mm gap (Brief v1, "Pumping head"). Roller 1 sits in the wrap (0.08 cm3), rollers 2 and 3 touch the straight legs (0.03 cm3 each).
+      - ["rotor_grp/roller_*", "cassette/tube"]
+  accepted_warns:
+    - check: qa.sweep.door.clearance
+      parts: ["front/hinge_*"]
+      reason: "Hinge pin stubs run in 3.1 mm notches in the door (0.05 mm radial running fit, coaxial with the joint). The gap is constant over the swing."
+    - check: qa.sweep.door
+      parts: ["front/case_front"]
+      reason: "Only the overtravel pose -2.5 degrees warns: the closed door rests on the case front face, which is its physical stop. There is no overlap inside 0 to 100 degrees; the hinge edge is bevelled to clear the case to 102.5 degrees (tools/brief_numbers.py)."
+    - check: qa.sweep.rotor.clearance
+      parts: ["rotor_grp/rotor"]
+      reason: "Hub back face runs 0.50 mm off the bearing boss front face (axial running clearance, set by the 41.5 hub datum against the 41.0 bulkhead face)."
+    - check: qa.sweep.latch.clearance
+      parts: ["door/latch"]
+      reason: "Latch slider runs in its door notch with 0.20 mm clearance each side (sliding fit)."
+  envelope:
+    width: {max: 0.160}
+    length: {max: 0.058}
+    height: {exclude: ["*/tube"], excluded: {max: 0.110}}      # the tube stands 15 mm below the case by design
+  mass: {max: 0.6}
+  sweep:
+    min_clearance_mm: 1.0
+  fits:
+    # The pinch jaw closes onto the tube on purpose, so its clearance passes through zero. The open gap (at least 1.0) and the closed gap
+    # (at most 2.2) are hard rows under `distances:`; overlap with the tube is still measured by the sweep.
+    - {pair: ["cassette/lever", "cassette/tube"], contact: true}
+  distances:
+    # Squeeze gap: roller outer edge to the cassette's 20.0 radius (arc wall and cut-out edge). Brief: 2.7. Tessellated, so +-0.15; exact value in tools/brief_numbers.py.
+    - {id: squeeze_gap, from: "rotor_grp/roller_*", to: "cassette/cassette", min: 2.55, max: 2.85,
+       poses: [{joint: rotor, at: 0}, {joint: rotor, at: 30}, {joint: rotor, at: 60}, {joint: rotor, at: 90}, {joint: rotor, at: 120}, {joint: rotor, at: 150}]}
+    # Door pin reaches the pinch lever's ramp when the door is shut (lever open).
+    - {id: door_pin_reach, from: "door/door", to: "cassette/lever", min: 0, max: 0.5, home_only_ok: "door shut is the home pose; the sweep covers the swing"}
+    # Pinch (H1, Brief v1). Open: jaw at least 1.0 clear of the round tube; tessellation (TESS_TOL 0.1, chords sag inside the tube) can overstate a gap by 0.1, so the row floor is 1.1 for a Brief limit of 1.0 and the design gap is 1.2.
+    - {id: pinch_open_gap, from: "cassette/lever", to: "cassette/tube", min: 1.1, poses: [{joint: pinch, at: 0}]}
+    # Closed (joint lower limit): jaw to anvil face at most 2.2, measured along Y between the lever's highest Y (a box corner, exact) and the anvil face frame.
+    - {id: pinch_closed_gap, from: "cassette/lever", to: "cassette/cassette@anvil_face", along: y, min: 0, max: 2.2, poses: [{joint: pinch, at: lo}]}
+    # The closed jaw also reaches the tube.
+    - {id: pinch_closed_reach, from: "cassette/lever", to: "cassette/tube", max: 0.05, poses: [{joint: pinch, at: lo}]}

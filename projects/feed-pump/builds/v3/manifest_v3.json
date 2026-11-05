@@ -1,0 +1,4946 @@
+{
+  "format": "nl-cad/build/1",
+  "project": "feed-pump",
+  "version": 3,
+  "date": "2026-11-05",
+  "units": "m",
+  "frame": "Z up, X forward, Y left",
+  "subassemblies": [
+    {
+      "id": "back",
+      "name": "Case back and drive",
+      "parent": null,
+      "color": "#6f7a86"
+    },
+    {
+      "id": "cassette",
+      "name": "Cassette and tube",
+      "parent": null,
+      "color": "#4fd1c5"
+    },
+    {
+      "id": "door",
+      "name": "Door and latch",
+      "parent": null,
+      "color": "#a9c7e8"
+    },
+    {
+      "id": "electronics",
+      "name": "Electronics",
+      "parent": null,
+      "color": "#3c9a8a"
+    },
+    {
+      "id": "front",
+      "name": "Case front",
+      "parent": null,
+      "color": "#8aa4c2"
+    },
+    {
+      "id": "hardware",
+      "name": "Hardware",
+      "parent": null,
+      "color": "#b9bec6"
+    },
+    {
+      "id": "rotor_grp",
+      "name": "Rotor and rollers",
+      "parent": null,
+      "color": "#d98a2b"
+    }
+  ],
+  "instances": [
+    {
+      "path": "back/case_back",
+      "part": "case_back",
+      "subassembly": "back",
+      "source": "parts/case_back.py",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0,
+          -0.08,
+          0.0
+        ],
+        [
+          0.026,
+          0.08,
+          0.11
+        ]
+      ],
+      "mass_kg": 0.1,
+      "material": "PETG",
+      "bought": false,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "",
+        "part_number": "",
+        "description": "Case, rear half, printed PETG, 2.5 mm walls",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "back/cell_1",
+      "part": "cell",
+      "subassembly": "back",
+      "source": "parts/standin_cyl.py",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0118,
+        0.0,
+        0.0,
+        1.0,
+        -0.0325,
+        0.0,
+        -1.0,
+        0.0,
+        0.0118,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0025,
+          -0.065,
+          0.0025
+        ],
+        [
+          0.021,
+          0.0,
+          0.021
+        ]
+      ],
+      "mass_kg": 0.047,
+      "material": "li-ion",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "18650 cell",
+        "description": "Protected 18650 cell, 2S pack of two",
+        "source": "Brief v1 envelope; mass estimated"
+      }
+    },
+    {
+      "path": "back/cell_2",
+      "part": "cell",
+      "subassembly": "back",
+      "source": "parts/standin_cyl.py",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0118,
+        0.0,
+        0.0,
+        1.0,
+        0.0325,
+        0.0,
+        -1.0,
+        0.0,
+        0.0118,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0025,
+          0.0,
+          0.0025
+        ],
+        [
+          0.021,
+          0.065,
+          0.021
+        ]
+      ],
+      "mass_kg": 0.047,
+      "material": "li-ion",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "18650 cell",
+        "description": "Protected 18650 cell, 2S pack of two",
+        "source": "Brief v1 envelope; mass estimated"
+      }
+    },
+    {
+      "path": "back/encoder",
+      "part": "encoder",
+      "subassembly": "back",
+      "source": "parts/standin_box.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.0107,
+        1.0,
+        0.0,
+        0.0,
+        0.042,
+        0.0,
+        1.0,
+        0.0,
+        0.066,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0099,
+          0.038,
+          0.062
+        ],
+        [
+          0.0115,
+          0.046,
+          0.07
+        ]
+      ],
+      "mass_kg": 0.001,
+      "material": "fr4",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "AS5600 board",
+        "description": "AS5600 encoder board stand-in",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "back/insert_1",
+      "part": "insert",
+      "subassembly": "back",
+      "source": "parts/standin_cyl.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.0035,
+        1.0,
+        0.0,
+        0.0,
+        -0.015,
+        0.0,
+        1.0,
+        0.0,
+        0.036,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0005,
+          -0.0178,
+          0.0332
+        ],
+        [
+          0.0065,
+          -0.0122,
+          0.0388
+        ]
+      ],
+      "mass_kg": 0.0006,
+      "material": "brass",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "M4 heat-set insert",
+        "description": "M4 brass insert for the AMPS pattern",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "back/insert_2",
+      "part": "insert",
+      "subassembly": "back",
+      "source": "parts/standin_cyl.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.0035,
+        1.0,
+        0.0,
+        0.0,
+        -0.015,
+        0.0,
+        1.0,
+        0.0,
+        0.074,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0005,
+          -0.0178,
+          0.0712
+        ],
+        [
+          0.0065,
+          -0.0122,
+          0.0768
+        ]
+      ],
+      "mass_kg": 0.0006,
+      "material": "brass",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "M4 heat-set insert",
+        "description": "M4 brass insert for the AMPS pattern",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "back/insert_3",
+      "part": "insert",
+      "subassembly": "back",
+      "source": "parts/standin_cyl.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.0035,
+        1.0,
+        0.0,
+        0.0,
+        0.015,
+        0.0,
+        1.0,
+        0.0,
+        0.036,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0005,
+          0.0122,
+          0.0332
+        ],
+        [
+          0.0065,
+          0.0178,
+          0.0388
+        ]
+      ],
+      "mass_kg": 0.0006,
+      "material": "brass",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "M4 heat-set insert",
+        "description": "M4 brass insert for the AMPS pattern",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "back/insert_4",
+      "part": "insert",
+      "subassembly": "back",
+      "source": "parts/standin_cyl.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.0035,
+        1.0,
+        0.0,
+        0.0,
+        0.015,
+        0.0,
+        1.0,
+        0.0,
+        0.074,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0005,
+          0.0122,
+          0.0712
+        ],
+        [
+          0.0065,
+          0.0178,
+          0.0768
+        ]
+      ],
+      "mass_kg": 0.0006,
+      "material": "brass",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "M4 heat-set insert",
+        "description": "M4 brass insert for the AMPS pattern",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "back/motor",
+      "part": "motor",
+      "subassembly": "back",
+      "source": "parts/motor.py",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.02,
+        0.0,
+        0.0,
+        1.0,
+        0.032,
+        0.0,
+        -1.0,
+        0.0,
+        0.0545,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.006,
+          0.0,
+          0.0405
+        ],
+        [
+          0.034,
+          0.052,
+          0.0685
+        ]
+      ],
+      "mass_kg": 0.11,
+      "material": "steel",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "NEMA11 28x28x32",
+        "description": "NEMA 11 stepper, 5 mm shaft",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "back/worm",
+      "part": "worm",
+      "subassembly": "back",
+      "source": "parts/standin_cyl.py",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.02,
+        0.0,
+        0.0,
+        1.0,
+        0.042,
+        0.0,
+        -1.0,
+        0.0,
+        0.0545,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.016,
+          0.037,
+          0.0505
+        ],
+        [
+          0.024,
+          0.047,
+          0.0585
+        ]
+      ],
+      "mass_kg": 0.0023,
+      "material": "steel",
+      "bought": false,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "stand-in",
+        "description": "Worm, module 0.5, plain cylinder at pitch diameter",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "cassette/cassette",
+      "part": "cassette",
+      "subassembly": "cassette",
+      "source": "parts/cassette.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.041,
+        1.0,
+        0.0,
+        0.0,
+        0.042,
+        0.0,
+        1.0,
+        0.0,
+        0.066,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.041,
+          0.007,
+          0.01
+        ],
+        [
+          0.054,
+          0.077,
+          0.096
+        ]
+      ],
+      "mass_kg": 0.019,
+      "material": "PETG",
+      "bought": false,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "",
+        "part_number": "",
+        "description": "Cassette plate, printable or moulded, single use",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "cassette/lever",
+      "part": "lever",
+      "subassembly": "cassette",
+      "source": "parts/pinch_lever.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.048,
+        1.0,
+        0.0,
+        0.0,
+        0.053,
+        0.0,
+        1.0,
+        0.0,
+        0.014,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.044,
+          0.0495,
+          0.0105
+        ],
+        [
+          0.0548,
+          0.0565,
+          0.034
+        ]
+      ],
+      "mass_kg": 0.000833,
+      "material": "PETG",
+      "bought": false,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "",
+        "part_number": "",
+        "description": "Pinch lever, printed",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "cassette/spring",
+      "part": "spring",
+      "subassembly": "cassette",
+      "source": "parts/standin_cyl.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.0527,
+        1.0,
+        0.0,
+        0.0,
+        0.053,
+        0.0,
+        1.0,
+        0.0,
+        0.014,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0515,
+          0.0495,
+          0.0105
+        ],
+        [
+          0.054,
+          0.0565,
+          0.0175
+        ]
+      ],
+      "mass_kg": 0.0003,
+      "material": "steel",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "torsion spring",
+        "description": "Torsion spring closing the pinch lever (stand-in)",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "cassette/tube",
+      "part": "tube",
+      "subassembly": "cassette",
+      "source": "parts/tube.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.048,
+        1.0,
+        0.0,
+        0.0,
+        0.042,
+        0.0,
+        1.0,
+        0.0,
+        0.066,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0448,
+          0.022,
+          -0.015
+        ],
+        [
+          0.0512,
+          0.062,
+          0.086
+        ]
+      ],
+      "mass_kg": 0.0057,
+      "material": "silicone",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "silicone tube 3.2 x 6.4",
+        "description": "Silicone tube, 3.2 ID x 6.4 OD (medical grade needed)",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "door/door",
+      "part": "door",
+      "subassembly": "door",
+      "source": "parts/door.py",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.055,
+        0.0,
+        1.0,
+        0.0,
+        0.0775,
+        0.0,
+        0.0,
+        1.0,
+        0.056,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.053,
+          0.002,
+          0.003
+        ],
+        [
+          0.058,
+          0.0775,
+          0.106
+        ]
+      ],
+      "mass_kg": 0.027,
+      "material": "PC",
+      "bought": false,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "",
+        "part_number": "",
+        "description": "Door, clear polycarbonate 3 mm, with pinch pin",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "door/latch",
+      "part": "latch",
+      "subassembly": "door",
+      "source": "parts/latch.py",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0565,
+        0.0,
+        1.0,
+        0.0,
+        0.005,
+        0.0,
+        0.0,
+        1.0,
+        0.055,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0525,
+          0.0019,
+          0.045
+        ],
+        [
+          0.058,
+          0.0077,
+          0.065
+        ]
+      ],
+      "mass_kg": 0.000584,
+      "material": "PETG",
+      "bought": false,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "",
+        "part_number": "",
+        "description": "Door latch slider, printed",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "electronics/air",
+      "part": "air_sensor",
+      "subassembly": "electronics",
+      "source": "parts/standin_box.py",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0458,
+        0.0,
+        1.0,
+        0.0,
+        0.0588,
+        0.0,
+        0.0,
+        1.0,
+        0.045,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0398,
+          0.0518,
+          0.04
+        ],
+        [
+          0.0518,
+          0.0658,
+          0.05
+        ]
+      ],
+      "mass_kg": 0.004,
+      "material": "electronics",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "optical air sensor 14 x 10 x 12",
+        "description": "Optical air-in-line sensor, U slot straddling the tube",
+        "source": "Brief v1 envelope; mass estimated"
+      }
+    },
+    {
+      "path": "electronics/btn_1",
+      "part": "button",
+      "subassembly": "electronics",
+      "source": "parts/button.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.055,
+        1.0,
+        0.0,
+        0.0,
+        -0.066,
+        0.0,
+        1.0,
+        0.0,
+        0.03,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0475,
+          -0.074,
+          0.022
+        ],
+        [
+          0.057,
+          -0.058,
+          0.038
+        ]
+      ],
+      "mass_kg": 0.000675,
+      "material": "silicone",
+      "bought": false,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "",
+        "part_number": "",
+        "description": "Silicone keypad button",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "electronics/btn_2",
+      "part": "button",
+      "subassembly": "electronics",
+      "source": "parts/button.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.055,
+        1.0,
+        0.0,
+        0.0,
+        -0.046,
+        0.0,
+        1.0,
+        0.0,
+        0.03,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0475,
+          -0.054,
+          0.022
+        ],
+        [
+          0.057,
+          -0.038,
+          0.038
+        ]
+      ],
+      "mass_kg": 0.000675,
+      "material": "silicone",
+      "bought": false,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "",
+        "part_number": "",
+        "description": "Silicone keypad button",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "electronics/btn_3",
+      "part": "button",
+      "subassembly": "electronics",
+      "source": "parts/button.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.055,
+        1.0,
+        0.0,
+        0.0,
+        -0.026,
+        0.0,
+        1.0,
+        0.0,
+        0.03,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0475,
+          -0.034,
+          0.022
+        ],
+        [
+          0.057,
+          -0.018,
+          0.038
+        ]
+      ],
+      "mass_kg": 0.000675,
+      "material": "silicone",
+      "bought": false,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "",
+        "part_number": "",
+        "description": "Silicone keypad button",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "electronics/btn_4",
+      "part": "button",
+      "subassembly": "electronics",
+      "source": "parts/button.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.055,
+        1.0,
+        0.0,
+        0.0,
+        -0.058,
+        0.0,
+        1.0,
+        0.0,
+        0.012,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0475,
+          -0.066,
+          0.004
+        ],
+        [
+          0.057,
+          -0.05,
+          0.02
+        ]
+      ],
+      "mass_kg": 0.000675,
+      "material": "silicone",
+      "bought": false,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "",
+        "part_number": "",
+        "description": "Silicone keypad button",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "electronics/btn_5",
+      "part": "button",
+      "subassembly": "electronics",
+      "source": "parts/button.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.055,
+        1.0,
+        0.0,
+        0.0,
+        -0.034,
+        0.0,
+        1.0,
+        0.0,
+        0.012,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0475,
+          -0.042,
+          0.004
+        ],
+        [
+          0.057,
+          -0.026,
+          0.02
+        ]
+      ],
+      "mass_kg": 0.000675,
+      "material": "silicone",
+      "bought": false,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "",
+        "part_number": "",
+        "description": "Silicone keypad button",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "electronics/display",
+      "part": "display",
+      "subassembly": "electronics",
+      "source": "parts/standin_box.py",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0505,
+        0.0,
+        1.0,
+        0.0,
+        -0.034,
+        0.0,
+        0.0,
+        1.0,
+        0.083,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0485,
+          -0.064,
+          0.062
+        ],
+        [
+          0.0525,
+          -0.004,
+          0.104
+        ]
+      ],
+      "mass_kg": 0.025,
+      "material": "electronics",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "display 60 x 42 x 4",
+        "description": "Display",
+        "source": "Brief v1 envelope; mass estimated"
+      }
+    },
+    {
+      "path": "electronics/jack",
+      "part": "jack",
+      "subassembly": "electronics",
+      "source": "parts/standin_box.py",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0489,
+        0.0,
+        1.0,
+        0.0,
+        -0.022,
+        0.0,
+        0.0,
+        1.0,
+        0.0055,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0464,
+          -0.025,
+          0.0
+        ],
+        [
+          0.0514,
+          -0.019,
+          0.011
+        ]
+      ],
+      "mass_kg": 0.002,
+      "material": "electronics",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "3.5 mm switch socket",
+        "description": "3.5 mm assistive switch socket, opening down",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "electronics/p_down",
+      "part": "p_sensor",
+      "subassembly": "electronics",
+      "source": "parts/standin_box.py",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0398,
+        0.0,
+        1.0,
+        0.0,
+        0.0588,
+        0.0,
+        0.0,
+        1.0,
+        0.034,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0348,
+          0.0548,
+          0.03
+        ],
+        [
+          0.0448,
+          0.0628,
+          0.038
+        ]
+      ],
+      "mass_kg": 0.003,
+      "material": "electronics",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "pressure sensor 8 x 8 x 10",
+        "description": "Pressure sensor, tip on the tube through a window",
+        "source": "Brief v1 envelope; mass estimated"
+      }
+    },
+    {
+      "path": "electronics/p_up",
+      "part": "p_sensor",
+      "subassembly": "electronics",
+      "source": "parts/standin_box.py",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0398,
+        0.0,
+        1.0,
+        0.0,
+        0.0252,
+        0.0,
+        0.0,
+        1.0,
+        0.042,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0348,
+          0.0212,
+          0.038
+        ],
+        [
+          0.0448,
+          0.0292,
+          0.046
+        ]
+      ],
+      "mass_kg": 0.003,
+      "material": "electronics",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "pressure sensor 8 x 8 x 10",
+        "description": "Pressure sensor, tip on the tube through a window",
+        "source": "Brief v1 envelope; mass estimated"
+      }
+    },
+    {
+      "path": "electronics/pcb",
+      "part": "pcb",
+      "subassembly": "electronics",
+      "source": "parts/main_board.py",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0456,
+        0.0,
+        1.0,
+        0.0,
+        -0.046,
+        0.0,
+        0.0,
+        1.0,
+        0.056,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0368,
+          -0.076,
+          0.006
+        ],
+        [
+          0.0464,
+          -0.016,
+          0.106
+        ]
+      ],
+      "mass_kg": 0.036,
+      "material": "fr4",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "main board",
+        "description": "Main PCB stand-in",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "electronics/sounder",
+      "part": "sounder",
+      "subassembly": "electronics",
+      "source": "parts/standin_cyl.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.0478,
+        1.0,
+        0.0,
+        0.0,
+        -0.008,
+        0.0,
+        1.0,
+        0.0,
+        0.045,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.043,
+          -0.014,
+          0.039
+        ],
+        [
+          0.0525,
+          -0.002,
+          0.051
+        ]
+      ],
+      "mass_kg": 0.002,
+      "material": "electronics",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "12 mm sounder",
+        "description": "Piezo sounder behind a grille",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "electronics/sw_cass",
+      "part": "switch",
+      "subassembly": "electronics",
+      "source": "parts/standin_box.py",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.038,
+        0.0,
+        1.0,
+        0.0,
+        0.012,
+        0.0,
+        0.0,
+        1.0,
+        0.084,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.035,
+          0.009,
+          0.081
+        ],
+        [
+          0.041,
+          0.015,
+          0.087
+        ]
+      ],
+      "mass_kg": 0.001,
+      "material": "electronics",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "switch 6 x 6 x 6",
+        "description": "Door switch or cassette-present sensor",
+        "source": "Brief v1 envelope; mass estimated"
+      }
+    },
+    {
+      "path": "electronics/sw_door",
+      "part": "switch",
+      "subassembly": "electronics",
+      "source": "parts/standin_box.py",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.052,
+        0.0,
+        1.0,
+        0.0,
+        0.06,
+        0.0,
+        0.0,
+        1.0,
+        0.102,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.049,
+          0.057,
+          0.099
+        ],
+        [
+          0.055,
+          0.063,
+          0.105
+        ]
+      ],
+      "mass_kg": 0.001,
+      "material": "electronics",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "switch 6 x 6 x 6",
+        "description": "Door switch or cassette-present sensor",
+        "source": "Brief v1 envelope; mass estimated"
+      }
+    },
+    {
+      "path": "electronics/usb",
+      "part": "usb",
+      "subassembly": "electronics",
+      "source": "parts/standin_box.py",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.048,
+        0.0,
+        1.0,
+        0.0,
+        -0.062,
+        0.0,
+        0.0,
+        1.0,
+        0.0037,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0464,
+          -0.0665,
+          0.0
+        ],
+        [
+          0.0497,
+          -0.0575,
+          0.0073
+        ]
+      ],
+      "mass_kg": 0.002,
+      "material": "electronics",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "USB-C receptacle",
+        "description": "USB-C receptacle, opening down",
+        "source": "estimated: typical receptacle"
+      }
+    },
+    {
+      "path": "front/bearing_f",
+      "part": "bearing",
+      "subassembly": "front",
+      "source": "parts/standin_cyl.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.039,
+        1.0,
+        0.0,
+        0.0,
+        0.042,
+        0.0,
+        1.0,
+        0.0,
+        0.066,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.037,
+          0.0365,
+          0.0605
+        ],
+        [
+          0.041,
+          0.0475,
+          0.0715
+        ]
+      ],
+      "mass_kg": 0.0012,
+      "material": "steel",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "MR115 (5 x 11 x 4)",
+        "description": "Deep groove ball bearing",
+        "source": "Brief v1: MR115 or similar"
+      }
+    },
+    {
+      "path": "front/bearing_r",
+      "part": "bearing",
+      "subassembly": "front",
+      "source": "parts/standin_cyl.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.03,
+        1.0,
+        0.0,
+        0.0,
+        0.042,
+        0.0,
+        1.0,
+        0.0,
+        0.066,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.028,
+          0.0365,
+          0.0605
+        ],
+        [
+          0.032,
+          0.0475,
+          0.0715
+        ]
+      ],
+      "mass_kg": 0.0012,
+      "material": "steel",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "MR115 (5 x 11 x 4)",
+        "description": "Deep groove ball bearing",
+        "source": "Brief v1: MR115 or similar"
+      }
+    },
+    {
+      "path": "front/case_front",
+      "part": "case_front",
+      "subassembly": "front",
+      "source": "parts/case_front.py",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.026,
+          -0.08,
+          0.0
+        ],
+        [
+          0.055,
+          0.08,
+          0.11
+        ]
+      ],
+      "mass_kg": 0.11,
+      "material": "PETG",
+      "bought": false,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "",
+        "part_number": "",
+        "description": "Case, front half with bay, bulkhead, printed PETG",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "front/hinge_bot",
+      "part": "hinge_stub_bot",
+      "subassembly": "front",
+      "source": "parts/standin_cyl.py",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.055,
+        0.0,
+        1.0,
+        0.0,
+        0.0775,
+        0.0,
+        0.0,
+        1.0,
+        0.006,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0535,
+          0.076,
+          0.003
+        ],
+        [
+          0.0565,
+          0.079,
+          0.009
+        ]
+      ],
+      "mass_kg": 0.0003,
+      "material": "steel",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "3 mm steel pin, 6 long",
+        "description": "Door hinge pin stub, bottom, 3 mm steel",
+        "source": "Brief v1 (3 mm steel pin); length estimated"
+      }
+    },
+    {
+      "path": "front/hinge_top",
+      "part": "hinge_stub_top",
+      "subassembly": "front",
+      "source": "parts/standin_cyl.py",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.055,
+        0.0,
+        1.0,
+        0.0,
+        0.0775,
+        0.0,
+        0.0,
+        1.0,
+        0.102,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0535,
+          0.076,
+          0.098
+        ],
+        [
+          0.0565,
+          0.079,
+          0.106
+        ]
+      ],
+      "mass_kg": 0.0004,
+      "material": "steel",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "3 mm steel pin, 8 long",
+        "description": "Door hinge pin stub, top, 3 mm steel",
+        "source": "Brief v1 (3 mm steel pin); length estimated"
+      }
+    },
+    {
+      "path": "hardware/scr_1",
+      "part": "screw_m3x30",
+      "subassembly": "hardware",
+      "source": "nlcad/fasteners.py (parts/case_back.py)",
+      "transform": [
+        0.0,
+        0.0,
+        -1.0,
+        0.0032,
+        1.0,
+        0.0,
+        0.0,
+        -0.07,
+        0.0,
+        -1.0,
+        0.0,
+        0.01,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0002,
+          -0.0728,
+          0.0072
+        ],
+        [
+          0.0332,
+          -0.0672,
+          0.0128
+        ]
+      ],
+      "mass_kg": 0.001877,
+      "material": "steel",
+      "bought": true,
+      "provenance": "published",
+      "bom": {
+        "vendor": "ISO 4762 (any fastener supplier)",
+        "part_number": "ISO 4762 M3x30",
+        "description": "M3x0.5 hex socket head cap screw, steel, stock lengths 5 to 60 mm. Mass is for the 25 mm length.",
+        "source": "library/fasteners/screw-iso4762-m3.json: ISO 4762:2004 Table 1 (head diameter dk max 'knurled', head height k, socket s, preferred lengths in the commercial range); geometry from bd_warehouse 0.4.0 (Apache-2.0), simple solids without thread"
+      },
+      "status": "published",
+      "kind": "fastener",
+      "fastener": {
+        "type": "screw",
+        "standard": "ISO 4762",
+        "thread": "M3",
+        "pitch_m": 0.0005,
+        "length_m": 0.03,
+        "head": {
+          "diameter_m": 0.0057,
+          "height_m": 0.003
+        },
+        "drive": {
+          "type": "hex socket",
+          "bit_m": 0.0025
+        },
+        "host": "front/case_front",
+        "nut": null,
+        "group": "scr_1"
+      }
+    },
+    {
+      "path": "hardware/scr_2",
+      "part": "screw_m3x30",
+      "subassembly": "hardware",
+      "source": "nlcad/fasteners.py (parts/case_back.py)",
+      "transform": [
+        0.0,
+        0.0,
+        -1.0,
+        0.0032,
+        1.0,
+        0.0,
+        0.0,
+        0.07,
+        0.0,
+        -1.0,
+        0.0,
+        0.01,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0002,
+          0.0672,
+          0.0072
+        ],
+        [
+          0.0332,
+          0.0728,
+          0.0128
+        ]
+      ],
+      "mass_kg": 0.001877,
+      "material": "steel",
+      "bought": true,
+      "provenance": "published",
+      "bom": {
+        "vendor": "ISO 4762 (any fastener supplier)",
+        "part_number": "ISO 4762 M3x30",
+        "description": "M3x0.5 hex socket head cap screw, steel, stock lengths 5 to 60 mm. Mass is for the 25 mm length.",
+        "source": "library/fasteners/screw-iso4762-m3.json: ISO 4762:2004 Table 1 (head diameter dk max 'knurled', head height k, socket s, preferred lengths in the commercial range); geometry from bd_warehouse 0.4.0 (Apache-2.0), simple solids without thread"
+      },
+      "status": "published",
+      "kind": "fastener",
+      "fastener": {
+        "type": "screw",
+        "standard": "ISO 4762",
+        "thread": "M3",
+        "pitch_m": 0.0005,
+        "length_m": 0.03,
+        "head": {
+          "diameter_m": 0.0057,
+          "height_m": 0.003
+        },
+        "drive": {
+          "type": "hex socket",
+          "bit_m": 0.0025
+        },
+        "host": "front/case_front",
+        "nut": null,
+        "group": "scr_2"
+      }
+    },
+    {
+      "path": "hardware/scr_3",
+      "part": "screw_m3x30",
+      "subassembly": "hardware",
+      "source": "nlcad/fasteners.py (parts/case_back.py)",
+      "transform": [
+        0.0,
+        0.0,
+        -1.0,
+        0.0032,
+        1.0,
+        0.0,
+        0.0,
+        -0.07,
+        0.0,
+        -1.0,
+        0.0,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0002,
+          -0.0728,
+          0.0972
+        ],
+        [
+          0.0332,
+          -0.0672,
+          0.1028
+        ]
+      ],
+      "mass_kg": 0.001877,
+      "material": "steel",
+      "bought": true,
+      "provenance": "published",
+      "bom": {
+        "vendor": "ISO 4762 (any fastener supplier)",
+        "part_number": "ISO 4762 M3x30",
+        "description": "M3x0.5 hex socket head cap screw, steel, stock lengths 5 to 60 mm. Mass is for the 25 mm length.",
+        "source": "library/fasteners/screw-iso4762-m3.json: ISO 4762:2004 Table 1 (head diameter dk max 'knurled', head height k, socket s, preferred lengths in the commercial range); geometry from bd_warehouse 0.4.0 (Apache-2.0), simple solids without thread"
+      },
+      "status": "published",
+      "kind": "fastener",
+      "fastener": {
+        "type": "screw",
+        "standard": "ISO 4762",
+        "thread": "M3",
+        "pitch_m": 0.0005,
+        "length_m": 0.03,
+        "head": {
+          "diameter_m": 0.0057,
+          "height_m": 0.003
+        },
+        "drive": {
+          "type": "hex socket",
+          "bit_m": 0.0025
+        },
+        "host": "front/case_front",
+        "nut": null,
+        "group": "scr_3"
+      }
+    },
+    {
+      "path": "hardware/scr_4",
+      "part": "screw_m3x30",
+      "subassembly": "hardware",
+      "source": "nlcad/fasteners.py (parts/case_back.py)",
+      "transform": [
+        0.0,
+        0.0,
+        -1.0,
+        0.0032,
+        1.0,
+        0.0,
+        0.0,
+        0.07,
+        0.0,
+        -1.0,
+        0.0,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0002,
+          0.0672,
+          0.0972
+        ],
+        [
+          0.0332,
+          0.0728,
+          0.1028
+        ]
+      ],
+      "mass_kg": 0.001877,
+      "material": "steel",
+      "bought": true,
+      "provenance": "published",
+      "bom": {
+        "vendor": "ISO 4762 (any fastener supplier)",
+        "part_number": "ISO 4762 M3x30",
+        "description": "M3x0.5 hex socket head cap screw, steel, stock lengths 5 to 60 mm. Mass is for the 25 mm length.",
+        "source": "library/fasteners/screw-iso4762-m3.json: ISO 4762:2004 Table 1 (head diameter dk max 'knurled', head height k, socket s, preferred lengths in the commercial range); geometry from bd_warehouse 0.4.0 (Apache-2.0), simple solids without thread"
+      },
+      "status": "published",
+      "kind": "fastener",
+      "fastener": {
+        "type": "screw",
+        "standard": "ISO 4762",
+        "thread": "M3",
+        "pitch_m": 0.0005,
+        "length_m": 0.03,
+        "head": {
+          "diameter_m": 0.0057,
+          "height_m": 0.003
+        },
+        "drive": {
+          "type": "hex socket",
+          "bit_m": 0.0025
+        },
+        "host": "front/case_front",
+        "nut": null,
+        "group": "scr_4"
+      }
+    },
+    {
+      "path": "rotor_grp/magnet",
+      "part": "magnet",
+      "subassembly": "rotor_grp",
+      "source": "parts/standin_cyl.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.0138,
+        1.0,
+        0.0,
+        0.0,
+        0.042,
+        0.0,
+        1.0,
+        0.0,
+        0.066,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0125,
+          0.039,
+          0.063
+        ],
+        [
+          0.015,
+          0.045,
+          0.069
+        ]
+      ],
+      "mass_kg": 0.0005,
+      "material": "steel",
+      "bought": true,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "diametric magnet 6 x 2.5",
+        "description": "Diametric magnet for the encoder",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "rotor_grp/roller_1",
+      "part": "roller",
+      "subassembly": "rotor_grp",
+      "source": "parts/standin_cyl.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.048,
+        1.0,
+        0.0,
+        0.0,
+        0.042,
+        0.0,
+        1.0,
+        0.0,
+        0.0793,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.044,
+          0.038,
+          0.0753
+        ],
+        [
+          0.052,
+          0.046,
+          0.0833
+        ]
+      ],
+      "mass_kg": 0.0005,
+      "material": "plastic",
+      "bought": false,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "stand-in",
+        "description": "Roller, 8 OD x 8 wide, acetal",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "rotor_grp/roller_2",
+      "part": "roller",
+      "subassembly": "rotor_grp",
+      "source": "parts/standin_cyl.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.048,
+        1.0,
+        0.0,
+        0.0,
+        0.0305,
+        0.0,
+        1.0,
+        0.0,
+        0.0593,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.044,
+          0.0265,
+          0.0554
+        ],
+        [
+          0.052,
+          0.0345,
+          0.0633
+        ]
+      ],
+      "mass_kg": 0.0005,
+      "material": "plastic",
+      "bought": false,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "stand-in",
+        "description": "Roller, 8 OD x 8 wide, acetal",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "rotor_grp/roller_3",
+      "part": "roller",
+      "subassembly": "rotor_grp",
+      "source": "parts/standin_cyl.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.048,
+        1.0,
+        0.0,
+        0.0,
+        0.0535,
+        0.0,
+        1.0,
+        0.0,
+        0.0593,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.044,
+          0.0495,
+          0.0554
+        ],
+        [
+          0.052,
+          0.0575,
+          0.0633
+        ]
+      ],
+      "mass_kg": 0.0005,
+      "material": "plastic",
+      "bought": false,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "stand-in",
+        "description": "Roller, 8 OD x 8 wide, acetal",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "rotor_grp/rotor",
+      "part": "rotor",
+      "subassembly": "rotor_grp",
+      "source": "parts/rotor.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.0415,
+        1.0,
+        0.0,
+        0.0,
+        0.042,
+        0.0,
+        1.0,
+        0.0,
+        0.066,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.015,
+          0.027,
+          0.051
+        ],
+        [
+          0.0525,
+          0.057,
+          0.081
+        ]
+      ],
+      "mass_kg": 0.019,
+      "material": "steel",
+      "bought": false,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "",
+        "part_number": "",
+        "description": "Rotor shaft with hub and three roller pins",
+        "source": "estimated: Brief v1"
+      }
+    },
+    {
+      "path": "rotor_grp/worm_wheel",
+      "part": "worm_wheel",
+      "subassembly": "rotor_grp",
+      "source": "parts/standin_cyl.py",
+      "transform": [
+        0.0,
+        0.0,
+        1.0,
+        0.02,
+        1.0,
+        0.0,
+        0.0,
+        0.042,
+        0.0,
+        1.0,
+        0.0,
+        0.066,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox": [
+        [
+          0.0175,
+          0.0345,
+          0.0585
+        ],
+        [
+          0.0225,
+          0.0495,
+          0.0735
+        ]
+      ],
+      "mass_kg": 0.0067,
+      "material": "brass",
+      "bought": false,
+      "provenance": "estimated",
+      "bom": {
+        "vendor": "generic",
+        "part_number": "stand-in",
+        "description": "Worm wheel, module 0.5, 30 teeth, plain cylinder at pitch diameter",
+        "source": "estimated: Brief v1"
+      }
+    }
+  ],
+  "joints": [
+    {
+      "name": "door",
+      "type": "revolute",
+      "parent": "front/case_front",
+      "child": "door/door",
+      "origin": [
+        0.055,
+        0.0775,
+        0.056
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range": [
+        0,
+        1.745
+      ]
+    },
+    {
+      "name": "fx_air",
+      "type": "fixed",
+      "parent": "front/case_front",
+      "child": "electronics/air",
+      "origin": [
+        0.0458,
+        0.0588,
+        0.045
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_bearing_f",
+      "type": "fixed",
+      "parent": "front/case_front",
+      "child": "front/bearing_f",
+      "origin": [
+        0.039,
+        0.042,
+        0.066
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_bearing_r",
+      "type": "fixed",
+      "parent": "front/case_front",
+      "child": "front/bearing_r",
+      "origin": [
+        0.03,
+        0.042,
+        0.066
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_btn_1",
+      "type": "fixed",
+      "parent": "front/case_front",
+      "child": "electronics/btn_1",
+      "origin": [
+        0.055,
+        -0.066,
+        0.03
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_btn_2",
+      "type": "fixed",
+      "parent": "front/case_front",
+      "child": "electronics/btn_2",
+      "origin": [
+        0.055,
+        -0.046,
+        0.03
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_btn_3",
+      "type": "fixed",
+      "parent": "front/case_front",
+      "child": "electronics/btn_3",
+      "origin": [
+        0.055,
+        -0.026,
+        0.03
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_btn_4",
+      "type": "fixed",
+      "parent": "front/case_front",
+      "child": "electronics/btn_4",
+      "origin": [
+        0.055,
+        -0.058,
+        0.012
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_btn_5",
+      "type": "fixed",
+      "parent": "front/case_front",
+      "child": "electronics/btn_5",
+      "origin": [
+        0.055,
+        -0.034,
+        0.012
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_case_front",
+      "type": "fixed",
+      "parent": "back/case_back",
+      "child": "front/case_front",
+      "origin": [
+        0.026,
+        0.0,
+        0.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_cassette",
+      "type": "fixed",
+      "parent": "front/case_front",
+      "child": "cassette/cassette",
+      "origin": [
+        0.041,
+        0.042,
+        0.01
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_cell_1",
+      "type": "fixed",
+      "parent": "back/case_back",
+      "child": "back/cell_1",
+      "origin": [
+        0.0118,
+        -0.0325,
+        0.0118
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_cell_2",
+      "type": "fixed",
+      "parent": "back/case_back",
+      "child": "back/cell_2",
+      "origin": [
+        0.0118,
+        0.0325,
+        0.0118
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_display",
+      "type": "fixed",
+      "parent": "front/case_front",
+      "child": "electronics/display",
+      "origin": [
+        0.0505,
+        -0.034,
+        0.083
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_encoder",
+      "type": "fixed",
+      "parent": "back/case_back",
+      "child": "back/encoder",
+      "origin": [
+        0.0107,
+        0.042,
+        0.066
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_hinge_bot",
+      "type": "fixed",
+      "parent": "front/case_front",
+      "child": "front/hinge_bot",
+      "origin": [
+        0.055,
+        0.0775,
+        0.006
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_hinge_top",
+      "type": "fixed",
+      "parent": "front/case_front",
+      "child": "front/hinge_top",
+      "origin": [
+        0.055,
+        0.0775,
+        0.102
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_insert_1",
+      "type": "fixed",
+      "parent": "back/case_back",
+      "child": "back/insert_1",
+      "origin": [
+        0.0035,
+        -0.015,
+        0.036
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_insert_2",
+      "type": "fixed",
+      "parent": "back/case_back",
+      "child": "back/insert_2",
+      "origin": [
+        0.0035,
+        -0.015,
+        0.074
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_insert_3",
+      "type": "fixed",
+      "parent": "back/case_back",
+      "child": "back/insert_3",
+      "origin": [
+        0.0035,
+        0.015,
+        0.036
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_insert_4",
+      "type": "fixed",
+      "parent": "back/case_back",
+      "child": "back/insert_4",
+      "origin": [
+        0.0035,
+        0.015,
+        0.074
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_jack",
+      "type": "fixed",
+      "parent": "electronics/pcb",
+      "child": "electronics/jack",
+      "origin": [
+        0.0489,
+        -0.022,
+        0.0055
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_magnet",
+      "type": "fixed",
+      "parent": "rotor_grp/rotor",
+      "child": "rotor_grp/magnet",
+      "origin": [
+        0.0138,
+        0.042,
+        0.066
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_motor",
+      "type": "fixed",
+      "parent": "back/case_back",
+      "child": "back/motor",
+      "origin": [
+        0.02,
+        0.032,
+        0.0545
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_p_down",
+      "type": "fixed",
+      "parent": "front/case_front",
+      "child": "electronics/p_down",
+      "origin": [
+        0.0398,
+        0.0588,
+        0.034
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_p_up",
+      "type": "fixed",
+      "parent": "front/case_front",
+      "child": "electronics/p_up",
+      "origin": [
+        0.0398,
+        0.0252,
+        0.042
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_pcb",
+      "type": "fixed",
+      "parent": "front/case_front",
+      "child": "electronics/pcb",
+      "origin": [
+        0.0456,
+        -0.046,
+        0.056
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_scr_1",
+      "type": "fixed",
+      "parent": "back/case_back",
+      "child": "hardware/scr_1",
+      "origin": [
+        0.0032,
+        -0.07,
+        0.01
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_scr_2",
+      "type": "fixed",
+      "parent": "back/case_back",
+      "child": "hardware/scr_2",
+      "origin": [
+        0.0032,
+        0.07,
+        0.01
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_scr_3",
+      "type": "fixed",
+      "parent": "back/case_back",
+      "child": "hardware/scr_3",
+      "origin": [
+        0.0032,
+        -0.07,
+        0.1
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_scr_4",
+      "type": "fixed",
+      "parent": "back/case_back",
+      "child": "hardware/scr_4",
+      "origin": [
+        0.0032,
+        0.07,
+        0.1
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_sounder",
+      "type": "fixed",
+      "parent": "front/case_front",
+      "child": "electronics/sounder",
+      "origin": [
+        0.0478,
+        -0.008,
+        0.045
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_spring",
+      "type": "fixed",
+      "parent": "cassette/cassette",
+      "child": "cassette/spring",
+      "origin": [
+        0.0527,
+        0.053,
+        0.014
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_sw_cass",
+      "type": "fixed",
+      "parent": "front/case_front",
+      "child": "electronics/sw_cass",
+      "origin": [
+        0.038,
+        0.012,
+        0.084
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_sw_door",
+      "type": "fixed",
+      "parent": "front/case_front",
+      "child": "electronics/sw_door",
+      "origin": [
+        0.052,
+        0.06,
+        0.102
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_tube",
+      "type": "fixed",
+      "parent": "cassette/cassette",
+      "child": "cassette/tube",
+      "origin": [
+        0.048,
+        0.042,
+        0.0828
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_usb",
+      "type": "fixed",
+      "parent": "electronics/pcb",
+      "child": "electronics/usb",
+      "origin": [
+        0.048,
+        -0.062,
+        0.0037
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_worm",
+      "type": "fixed",
+      "parent": "back/motor",
+      "child": "back/worm",
+      "origin": [
+        0.02,
+        0.042,
+        0.0545
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "fx_worm_wheel",
+      "type": "fixed",
+      "parent": "rotor_grp/rotor",
+      "child": "rotor_grp/worm_wheel",
+      "origin": [
+        0.02,
+        0.042,
+        0.066
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "latch",
+      "type": "prismatic",
+      "parent": "door/door",
+      "child": "door/latch",
+      "origin": [
+        0.0565,
+        0.005,
+        0.055
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range": [
+        0,
+        0.006
+      ]
+    },
+    {
+      "name": "pinch",
+      "type": "revolute",
+      "parent": "cassette/cassette",
+      "child": "cassette/lever",
+      "origin": [
+        0.048,
+        0.053,
+        0.014
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.2618,
+        0
+      ]
+    },
+    {
+      "name": "roller_1",
+      "type": "continuous",
+      "parent": "rotor_grp/rotor",
+      "child": "rotor_grp/roller_1",
+      "origin": [
+        0.048,
+        0.042,
+        0.0793
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "roller_2",
+      "type": "continuous",
+      "parent": "rotor_grp/rotor",
+      "child": "rotor_grp/roller_2",
+      "origin": [
+        0.048,
+        0.0305,
+        0.0593
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "roller_3",
+      "type": "continuous",
+      "parent": "rotor_grp/rotor",
+      "child": "rotor_grp/roller_3",
+      "origin": [
+        0.048,
+        0.0535,
+        0.0593
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    },
+    {
+      "name": "rotor",
+      "type": "continuous",
+      "parent": "front/case_front",
+      "child": "rotor_grp/rotor",
+      "origin": [
+        0.0415,
+        0.042,
+        0.066
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "range": null
+    }
+  ],
+  "frames": [
+    {
+      "path": "back/case_back",
+      "name": "amps_1",
+      "origin": [
+        0.0035,
+        -0.015,
+        0.036
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/case_back",
+      "name": "amps_2",
+      "origin": [
+        0.0035,
+        -0.015,
+        0.074
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/case_back",
+      "name": "amps_3",
+      "origin": [
+        0.0035,
+        0.015,
+        0.036
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/case_back",
+      "name": "amps_4",
+      "origin": [
+        0.0035,
+        0.015,
+        0.074
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/case_back",
+      "name": "cell_1",
+      "origin": [
+        0.0118,
+        -0.0325,
+        0.0118
+      ],
+      "z": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/case_back",
+      "name": "cell_2",
+      "origin": [
+        0.0118,
+        0.0325,
+        0.0118
+      ],
+      "z": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/case_back",
+      "name": "encoder",
+      "origin": [
+        0.0107,
+        0.042,
+        0.066
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/case_back",
+      "name": "motor_seat",
+      "origin": [
+        0.02,
+        0.032,
+        0.0545
+      ],
+      "z": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/case_back",
+      "name": "origin",
+      "origin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/case_back",
+      "name": "scr_1",
+      "origin": [
+        0.0032,
+        -0.07,
+        0.01
+      ],
+      "z": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/case_back",
+      "name": "scr_2",
+      "origin": [
+        0.0032,
+        0.07,
+        0.01
+      ],
+      "z": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/case_back",
+      "name": "scr_3",
+      "origin": [
+        0.0032,
+        -0.07,
+        0.1
+      ],
+      "z": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/case_back",
+      "name": "scr_4",
+      "origin": [
+        0.0032,
+        0.07,
+        0.1
+      ],
+      "z": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/cell_1",
+      "name": "c",
+      "origin": [
+        0.0118,
+        -0.0325,
+        0.0118
+      ],
+      "z": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/cell_2",
+      "name": "c",
+      "origin": [
+        0.0118,
+        0.0325,
+        0.0118
+      ],
+      "z": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/encoder",
+      "name": "c",
+      "origin": [
+        0.0107,
+        0.042,
+        0.066
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/insert_1",
+      "name": "c",
+      "origin": [
+        0.0035,
+        -0.015,
+        0.036
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/insert_2",
+      "name": "c",
+      "origin": [
+        0.0035,
+        -0.015,
+        0.074
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/insert_3",
+      "name": "c",
+      "origin": [
+        0.0035,
+        0.015,
+        0.036
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/insert_4",
+      "name": "c",
+      "origin": [
+        0.0035,
+        0.015,
+        0.074
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/motor",
+      "name": "face",
+      "origin": [
+        0.02,
+        0.032,
+        0.0545
+      ],
+      "z": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/motor",
+      "name": "worm_seat",
+      "origin": [
+        0.02,
+        0.042,
+        0.0545
+      ],
+      "z": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "back/worm",
+      "name": "c",
+      "origin": [
+        0.02,
+        0.042,
+        0.0545
+      ],
+      "z": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "cassette/cassette",
+      "name": "foot",
+      "origin": [
+        0.041,
+        0.042,
+        0.01
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "cassette/cassette",
+      "name": "lever_pivot",
+      "origin": [
+        0.048,
+        0.053,
+        0.014
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "cassette/cassette",
+      "name": "spring_seat",
+      "origin": [
+        0.0527,
+        0.053,
+        0.014
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "cassette/cassette",
+      "name": "tube_top",
+      "origin": [
+        0.048,
+        0.042,
+        0.0828
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "cassette/lever",
+      "name": "pivot",
+      "origin": [
+        0.048,
+        0.053,
+        0.014
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "cassette/spring",
+      "name": "c",
+      "origin": [
+        0.0527,
+        0.053,
+        0.014
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "cassette/tube",
+      "name": "top",
+      "origin": [
+        0.048,
+        0.042,
+        0.0828
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "door/door",
+      "name": "hinge",
+      "origin": [
+        0.055,
+        0.0775,
+        0.056
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "door/door",
+      "name": "latch",
+      "origin": [
+        0.0565,
+        0.005,
+        0.055
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "door/door",
+      "name": "pin_tip",
+      "origin": [
+        0.053,
+        0.0551,
+        0.0265
+      ],
+      "z": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "door/latch",
+      "name": "slide",
+      "origin": [
+        0.0565,
+        0.005,
+        0.055
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "electronics/air",
+      "name": "c",
+      "origin": [
+        0.0458,
+        0.0588,
+        0.045
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "electronics/btn_1",
+      "name": "seat",
+      "origin": [
+        0.055,
+        -0.066,
+        0.03
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "electronics/btn_2",
+      "name": "seat",
+      "origin": [
+        0.055,
+        -0.046,
+        0.03
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "electronics/btn_3",
+      "name": "seat",
+      "origin": [
+        0.055,
+        -0.026,
+        0.03
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "electronics/btn_4",
+      "name": "seat",
+      "origin": [
+        0.055,
+        -0.058,
+        0.012
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "electronics/btn_5",
+      "name": "seat",
+      "origin": [
+        0.055,
+        -0.034,
+        0.012
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "electronics/display",
+      "name": "c",
+      "origin": [
+        0.0505,
+        -0.034,
+        0.083
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "electronics/jack",
+      "name": "c",
+      "origin": [
+        0.0489,
+        -0.022,
+        0.0055
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "electronics/p_down",
+      "name": "c",
+      "origin": [
+        0.0398,
+        0.0588,
+        0.034
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "electronics/p_up",
+      "name": "c",
+      "origin": [
+        0.0398,
+        0.0252,
+        0.042
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "electronics/pcb",
+      "name": "c",
+      "origin": [
+        0.0456,
+        -0.046,
+        0.056
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "electronics/sounder",
+      "name": "c",
+      "origin": [
+        0.0478,
+        -0.008,
+        0.045
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "electronics/sw_cass",
+      "name": "c",
+      "origin": [
+        0.038,
+        0.012,
+        0.084
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "electronics/sw_door",
+      "name": "c",
+      "origin": [
+        0.052,
+        0.06,
+        0.102
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "electronics/usb",
+      "name": "c",
+      "origin": [
+        0.048,
+        -0.062,
+        0.0037
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/bearing_f",
+      "name": "c",
+      "origin": [
+        0.039,
+        0.042,
+        0.066
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/bearing_r",
+      "name": "c",
+      "origin": [
+        0.03,
+        0.042,
+        0.066
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "air",
+      "origin": [
+        0.0458,
+        0.0588,
+        0.045
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "bearing_front",
+      "origin": [
+        0.039,
+        0.042,
+        0.066
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "bearing_rear",
+      "origin": [
+        0.03,
+        0.042,
+        0.066
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "btn_1",
+      "origin": [
+        0.055,
+        -0.066,
+        0.03
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "btn_2",
+      "origin": [
+        0.055,
+        -0.046,
+        0.03
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "btn_3",
+      "origin": [
+        0.055,
+        -0.026,
+        0.03
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "btn_4",
+      "origin": [
+        0.055,
+        -0.058,
+        0.012
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "btn_5",
+      "origin": [
+        0.055,
+        -0.034,
+        0.012
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "cassette_seat",
+      "origin": [
+        0.041,
+        0.042,
+        0.01
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "display",
+      "origin": [
+        0.0505,
+        -0.034,
+        0.083
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "hinge_bot",
+      "origin": [
+        0.055,
+        0.0775,
+        0.006
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "hinge_top",
+      "origin": [
+        0.055,
+        0.0775,
+        0.102
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "jack",
+      "origin": [
+        0.0489,
+        -0.022,
+        0.0055
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "origin",
+      "origin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "pcb",
+      "origin": [
+        0.0456,
+        -0.046,
+        0.056
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "pressure_down",
+      "origin": [
+        0.0398,
+        0.0588,
+        0.034
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "pressure_up",
+      "origin": [
+        0.0398,
+        0.0252,
+        0.042
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "sounder",
+      "origin": [
+        0.0478,
+        -0.008,
+        0.045
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "split",
+      "origin": [
+        0.026,
+        0.0,
+        0.0
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "sw_cass",
+      "origin": [
+        0.038,
+        0.012,
+        0.084
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "sw_door",
+      "origin": [
+        0.052,
+        0.06,
+        0.102
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/case_front",
+      "name": "usb",
+      "origin": [
+        0.048,
+        -0.062,
+        0.0037
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/hinge_bot",
+      "name": "c",
+      "origin": [
+        0.055,
+        0.0775,
+        0.006
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "front/hinge_top",
+      "name": "c",
+      "origin": [
+        0.055,
+        0.0775,
+        0.102
+      ],
+      "z": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "x": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "hardware/scr_1",
+      "name": "drive",
+      "origin": [
+        0.0002,
+        -0.07,
+        0.01
+      ],
+      "z": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "hardware/scr_1",
+      "name": "head",
+      "origin": [
+        0.0032,
+        -0.07,
+        0.01
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "hardware/scr_1",
+      "name": "tip",
+      "origin": [
+        0.0332,
+        -0.07,
+        0.01
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "hardware/scr_2",
+      "name": "drive",
+      "origin": [
+        0.0002,
+        0.07,
+        0.01
+      ],
+      "z": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "hardware/scr_2",
+      "name": "head",
+      "origin": [
+        0.0032,
+        0.07,
+        0.01
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "hardware/scr_2",
+      "name": "tip",
+      "origin": [
+        0.0332,
+        0.07,
+        0.01
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "hardware/scr_3",
+      "name": "drive",
+      "origin": [
+        0.0002,
+        -0.07,
+        0.1
+      ],
+      "z": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "hardware/scr_3",
+      "name": "head",
+      "origin": [
+        0.0032,
+        -0.07,
+        0.1
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "hardware/scr_3",
+      "name": "tip",
+      "origin": [
+        0.0332,
+        -0.07,
+        0.1
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "hardware/scr_4",
+      "name": "drive",
+      "origin": [
+        0.0002,
+        0.07,
+        0.1
+      ],
+      "z": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "hardware/scr_4",
+      "name": "head",
+      "origin": [
+        0.0032,
+        0.07,
+        0.1
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "hardware/scr_4",
+      "name": "tip",
+      "origin": [
+        0.0332,
+        0.07,
+        0.1
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "rotor_grp/magnet",
+      "name": "c",
+      "origin": [
+        0.0138,
+        0.042,
+        0.066
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "rotor_grp/roller_1",
+      "name": "c",
+      "origin": [
+        0.048,
+        0.042,
+        0.0793
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "rotor_grp/roller_2",
+      "name": "c",
+      "origin": [
+        0.048,
+        0.0305,
+        0.0593
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "rotor_grp/roller_3",
+      "name": "c",
+      "origin": [
+        0.048,
+        0.0535,
+        0.0593
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "rotor_grp/rotor",
+      "name": "axis",
+      "origin": [
+        0.0415,
+        0.042,
+        0.066
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "rotor_grp/rotor",
+      "name": "magnet_seat",
+      "origin": [
+        0.0138,
+        0.042,
+        0.066
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "rotor_grp/rotor",
+      "name": "pin_1",
+      "origin": [
+        0.048,
+        0.042,
+        0.0793
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "rotor_grp/rotor",
+      "name": "pin_2",
+      "origin": [
+        0.048,
+        0.0305,
+        0.0593
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "rotor_grp/rotor",
+      "name": "pin_3",
+      "origin": [
+        0.048,
+        0.0535,
+        0.0593
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "rotor_grp/rotor",
+      "name": "wheel_seat",
+      "origin": [
+        0.02,
+        0.042,
+        0.066
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "path": "rotor_grp/worm_wheel",
+      "name": "c",
+      "origin": [
+        0.02,
+        0.042,
+        0.066
+      ],
+      "z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "name": "Case front",
+      "subassemblies": [
+        "front"
+      ]
+    },
+    {
+      "name": "Electronics",
+      "subassemblies": [
+        "electronics"
+      ]
+    },
+    {
+      "name": "Rotor and rollers",
+      "subassemblies": [
+        "rotor_grp"
+      ]
+    },
+    {
+      "name": "Case back and drive",
+      "subassemblies": [
+        "back"
+      ],
+      "order": [
+        "motor",
+        "worm",
+        "encoder",
+        "cell_1",
+        "cell_2",
+        "insert_1",
+        "insert_2",
+        "insert_3",
+        "insert_4",
+        "case_back"
+      ]
+    },
+    {
+      "name": "Cassette and tube",
+      "subassemblies": [
+        "cassette"
+      ]
+    },
+    {
+      "name": "Door and latch",
+      "subassemblies": [
+        "door"
+      ]
+    },
+    {
+      "name": "Hardware",
+      "subassemblies": [
+        "hardware"
+      ]
+    }
+  ]
+}

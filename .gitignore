@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+local.toml
+.env
+projects/*/builds/*/*.glb
+projects/*/builds/*/renders/*.png
+projects/*/builds/*/*_viewer_v*.html
