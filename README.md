@@ -32,7 +32,7 @@ This is an original design. It takes target numbers from the published manual, a
 
 ## Build the CAD
 
-Needs a local checkout of nl-cad next to this repo at `..\nl-cad`, with `uv sync` already run there. nl-cad is private for now (it contains code awaiting a licence), so outside contributors cannot rebuild yet. They can use the exported STEP files once those are released.
+Needs a local checkout of nl-cad next to this repo at `..\nl-cad`, with `uv sync` already run there. nl-cad is private for now (it contains code awaiting a licence), so outside contributors cannot rebuild yet, and the link above will not open for them. They can use the STEP file in each folder under `projects/feed-pump/builds/`.
 
 ```
 build.cmd "what changed in this build"
@@ -40,4 +40,4 @@ build.cmd "what changed in this build"
 
 ## License
 
-Hardware designs: [CERN-OHL-P-2.0](LICENSE). Firmware, when it exists, will be MIT.
+Everything here, including part files and scripts: [CERN-OHL-P-2.0](LICENSE). Firmware, when it exists, will be MIT.
